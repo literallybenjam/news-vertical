@@ -45,7 +45,9 @@
     display: block;
     margin-block-start: 1rem;
     margin-block-end: 1rem;
+    block-size: -webkit-fit-content;
     block-size: -moz-fit-content;
+    block-size: fit-content;
     max-block-size: 100%;
     max-inline-size: 16rem;
     text-overflow: ellipsis;
