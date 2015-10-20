@@ -48,10 +48,11 @@
     max-inline-size: -moz-fit-content;
     max-inline-size: fit-content;
     text-overflow: ellipsis;
+    overflow: auto;
 }
 *.block.vertical, block.vertical.horizontal {
     margin: 1rem 0;
-    width: auto;
+    width: 100%;
     max-width: none;
     height: 16rem;
     max-height: -moz-fit-content;
@@ -60,7 +61,7 @@
 }
 *.block.horizontal {
     margin: 0 1rem;
-    height: auto;
+    height: 100%;
     max-height: none;
     width: 16rem;
     max-width: -moz-fit-content;
