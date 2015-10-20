@@ -27,9 +27,11 @@
     writing-mode: vertical-lr;
 }
 *.pad-start {
+    -webkit-margin-start: auto;
     margin-inline-start: auto;
 }
 *.pad-end {
+    -webkit-margin-end: auto;
     margin-inline-end: auto;
 }
 *.align-start {
@@ -43,7 +45,9 @@
 }
 *.block, *.block.inline {
     display: block;
+    -webkit-logical-height: 100%;
     block-size: 100%;
+    -webkit-max-logical-width: 16rem;
     max-inline-size: 16rem;
     text-overflow: ellipsis;
     overflow: auto;
@@ -70,6 +74,7 @@
     display: inline-block;
     vertical-align: top;
     line-height: 1;
+    -webkit-min-logical-width: 1em;
     min-inline-size: 1em;
     text-align: center;
 }
@@ -161,10 +166,15 @@ body > header ~ main {
 }
 section {
     display: block;
+    -webkit-margin-after: 1rem;
     margin-block-end: 1rem;
 }
 aside {
     display: block;
+    -webkit-margin-before: 1rem;
+    -webkit-margin-after: 1rem;
+    -webkit-margin-start: 1rem;
+    -webkit-margin-end: 1rem;
     margin-block-start: 1rem;
     margin-block-end: 1rem;
     padding-block-start: 1rem;
@@ -176,6 +186,10 @@ h1 {
     padding: 0;
 }
 h2 {
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 1rem;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
     margin-block-start: 0;
     margin-block-end: 1rem;
     margin-inline-start: 0;
@@ -187,6 +201,10 @@ h2 {
     text-align: start;
 }
 h3 {
+    -webkit-margin-before: 1rem;
+    -webkit-margin-after: 1rem;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
     margin-block-start: 1rem;
     margin-block-end: 1rem;
     margin-inline-start: 0;
@@ -199,6 +217,10 @@ h3 {
     text-align: center;
 }
 h4 {
+    -webkit-margin-before: 1rem;
+    -webkit-margin-after: .5rem;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
     margin-block-start: 1rem;
     margin-block-end: .5rem;
     margin-inline-start: 0;
@@ -210,6 +232,10 @@ h4 {
     text-align: center;
 }
 h5 {
+    -webkit-margin-before: .5rem;
+    -webkit-margin-after: .5rem;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
     margin-block-start: .5rem;
     margin-block-end: .5rem;
     margin-inline-start: 0;
@@ -221,6 +247,10 @@ h5 {
     text-align: start;
 }
 h6 {
+    -webkit-margin-before: .5rem;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
     margin-block-start: .5rem;
     margin-block-end: 0;
     margin-inline-start: 0;
@@ -232,12 +262,18 @@ h6 {
 }
 hr {
     margin: 0;
+    -webkit-padding-before: 0;
+    -webkit-padding-after: 1rem;
+    -webkit-padding-start: 0;
+    -webkit-padding-end: 0;
     padding-block-start: 0;
     padding-block-end: 1rem;
     padding-inline-start: 0;
     padding-inline-end: 0;
     border: 0;
+    -webkit-logical-height: 0;
     block-size: 0;
+    -webkit-logical-width: 100%;
     inline-size: 100%;
     background: transparent;
 }
@@ -251,6 +287,10 @@ p + p {
 
 ol, ul {
     margin: 0;
+    -webkit-padding-before: 0;
+    -webkit-padding-after: 0;
+    -webkit-padding-start: 2em;
+    -webkit-padding-end: 0;
     padding-block-start: 0;
     padding-block-end: 0;
     padding-inline-start: 2em;

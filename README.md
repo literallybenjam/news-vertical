@@ -75,7 +75,7 @@ The `<u>` element should be used to mark up chinese (or similar) proper names. T
 ##  Considerations:  ##
 
 NEWS-VERTICAL makes fair use of such features as `margin-block-start` to style content (for example, headings) regardless of `writing-mode` or `direction`.
-Right now, this is only supported in Firefox, which means that margins might be less-optimal in other browsers.
+Right now, this is only supported in Firefox and expirimentally in Webkit, which means that margins might be less-optimal in other browsers.
 This should only cause minor stylistic variation, as the fallback is usually graceful (in worst-case-scenarios, the browser default).
 
 NEWS-VERTICAL does not choose fonts, but is designed around the following font-weights: `200`, `300`, `400`, `600`, `700`, `900`.
