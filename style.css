@@ -51,7 +51,7 @@
     text-overflow: ellipsis;
     overflow: auto;
 }
-*.block.vertical, block.vertical.horizontal {
+*.block.vertical, *.block.vertical.horizontal {
     margin: 1rem 0;
     width: auto;
     max-width: 100%;
