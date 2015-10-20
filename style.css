@@ -1,0 +1,303 @@
+* {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    font-style: inherit;
+    color: inherit;
+    text-decoration: none;
+}
+*[title]:not([title=""]):not(a) {
+    cursor: help;
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+}
+*.vertical {
+    -webkit-writing-mode: vertical-rl;
+    -ms-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+}
+*.horizontal {
+    -webkit-writing-mode: horizontal-tb;
+    -ms-writing-mode: horizontal-tb;
+    writing-mode: horizontal-tb;
+}
+*.vertical.horizontal {
+    -webkit-writing-mode: vertical-lr;
+    -ms-writing-mode: vertical-lr;
+    writing-mode: vertical-lr;
+}
+*.pad-start {
+    margin-inline-start: auto;
+}
+*.pad-end {
+    margin-inline-end: auto;
+}
+*.align-start {
+    text-align: start;
+}
+*.align-end {
+    text-align: end;
+}
+*.align-start.align-end {
+    text-align: justify;
+}
+*.block {
+    display: block;
+    max-block-size: 100%;
+    inline-size: 16rem;
+    max-inline-size: -moz-fit-content;
+    max-inline-size: fit-content;
+    text-overflow: ellipsis;
+}
+*.block.vertical, block.vertical.horizontal {
+    margin: 1rem 0;
+    width: auto;
+    max-width: none;
+    height: 16rem;
+    max-height: -moz-fit-content;
+    max-height: fit-content;
+    text-align: start;
+}
+*.block.horizontal {
+    margin: 0 1rem;
+    height: auto;
+    max-height: none;
+    width: 16rem;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+    text-align: justify;
+}
+*.text {
+    display: inline-block;
+    vertical-align: baseline;
+    line-height: 1;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    font-family: serif;
+    font-weight: 300;
+    font-synthesis: none;
+    line-height: 1.2;
+    color: #3b3b3b;
+    background: #f5f5f5;
+    -webkit-writing-mode: vertical-rl;
+    -ms-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    -ms-text-combine-horizontal: digits 3;
+    text-combine-upright: digits 3;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
+}
+body {
+    margin: 1rem;
+    padding: 0;
+}
+body > header {
+    -webkit-writing-mode: horizontal-tb;
+    -ms-writing-mode: horizontal-tb;
+    writing-mode: horizontal-tb;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    margin: 1rem 0;
+    padding: 0;
+    height: 3rem;
+    width: 28rem;
+    font-size: 3rem;
+    line-height: 3rem;
+    white-space: nowrap;
+    text-align: end;
+}
+body > header ~ aside {
+    -webkit-writing-mode: horizontal-tb;
+    -ms-writing-mode: horizontal-tb;
+    writing-mode: horizontal-tb;
+    position: absolute;
+    top: 6rem;
+    right: 1rem;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    border-top: .05rem currentColor solid;
+    border-bottom: .05rem currentColor solid;
+    height: .9rem;
+    width: 28rem;
+    font-size: .75rem;
+    line-height: .9rem;
+    white-space: nowrap;
+    text-align: end;
+}
+body > header ~ footer {
+    -webkit-writing-mode: horizontal-tb;
+    -ms-writing-mode: horizontal-tb;
+    writing-mode: horizontal-tb;
+    position: absolute;
+    left: 1rem;
+    bottom: 1rem;
+    margin: 0;
+    padding: 0;
+    height: 1rem;
+    color: ;
+    font-size: .75rem;
+    line-height: 1rem;
+    white-space: nowrap;
+    text-align: start;
+}
+body > header ~ main {
+    display: block;
+    margin-top: 8rem;
+    margin-bottom: 2rem;
+}
+section {
+    display: block;
+    margin-block-end: 1rem;
+}
+aside {
+    display: block;
+    margin-block-start: 1rem;
+    margin-block-end: 1rem;
+    padding-block-start: 1rem;
+    padding-block-end: 1rem;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+h2 {
+    margin-block-start: 0;
+    margin-block-end: 1rem;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding: 0;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+    text-align: start;
+    white-space: nowrap;
+}
+h3 {
+    margin-block-start: 0;
+    margin-block-end: 1rem;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding: 0;
+    font-size: 1rem;
+    line-height: 1rem;
+    font-weight: 700;
+    font-variant: small-caps;
+    text-align: center;
+}
+h4 {
+    margin-block-start: 0;
+    margin-block-end: 1rem;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding: 0;
+    font-size: 1rem;
+    line-height: 1rem;
+    font-weight: 600;
+    text-align: center;
+}
+h5 {
+    margin-block-start: 0;
+    margin-block-end: 1rem;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding: 0;
+    font-size: 1rem;
+    line-height: 1rem;
+    font-variant: small-caps;
+    text-align: start;
+}
+h6 {
+    margin-block-start: 0;
+    margin-block-end: 1rem;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding: 0;
+    font-size: 1rem;
+    line-height: 1rem;
+    text-align: start;
+}
+hr {
+    margin: 0;
+    padding-block-start: 0;
+    padding-block-end: 1rem;
+    padding-inline-start: 0;
+    padding-inline-end: 0;
+    border: 0;
+    block-size: 0;
+    inline-size: 100%;
+    background: transparent;
+}
+p {
+    margin: 0;
+    padding: 0;
+}
+p + p {
+    text-indent: 2em;
+}
+
+ol, ul {
+    margin: 0;
+    padding-block-start: 0;
+    padding-block-end: 0;
+    padding-inline-start: 2em;
+    padding-inline-end: 0;
+    text-align: start;
+}
+ol {
+    list-style-type: decimal-leading-zero;
+}
+ul {
+    list-style-type: circle;
+}
+
+main a {
+    color: #0c0c0c;
+    outline-style: outset;
+    outline-width: 1px;
+    outline-color: rgba(28,28,28,0);
+    background: rgba(245,245,245,0);
+    font-weight: 400;
+    transition: outline-color .5s, background .5s;
+}
+main a:hover{
+    outline-color: rgba(28,28,28,.6);
+    background: rgba(245,245,245,1);
+}
+main a:active{
+    outline-style: inset;
+    outline-color: rgba(28,28,28,.6);
+    background: rgba(245,245,245,1);
+}
+b {
+    font-weight: 600;
+}
+code {
+    font-weight: 200;
+}
+em {
+    text-decoration: underline;
+}
+small {
+    font-weight: 200;
+}
+strong {
+    font-weight: 700;
+}
+u {
+    text-decoration: underline;
+    text-decoration-style: solid;
+}
+u.title {
+    text-decoration-style: wavy;
+}
