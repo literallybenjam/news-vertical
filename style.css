@@ -47,29 +47,19 @@
     margin-block-end: 1rem;
     max-block-size: 100%;
     max-inline-size: 16rem;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
     text-overflow: ellipsis;
     overflow: auto;
 }
 *.block.vertical, *.block.vertical.horizontal {
     margin: 1rem 0;
-    width: auto;
     max-width: 100%;
-    height: auto;
     max-height: 16rem;
     text-align: start;
     overflow-y: hidden;
 }
 *.block.horizontal {
     margin: 0 1rem;
-    height: auto;
     max-height: 100%;
-    width: auto;
     max-width: 16rem;
     text-align: justify;
     overflow-x: hidden;
