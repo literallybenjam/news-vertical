@@ -68,8 +68,10 @@
 }
 *.text, *.text.inline {
     display: inline-block;
-    vertical-align: baseline;
+    vertical-align: top;
     line-height: 1;
+    min-inline-size: 1em;
+    text-align: center;
 }
 *.inline {
     display: inline;
