@@ -50,6 +50,14 @@ Use `class="block"` to define a block. The maximum `inline-size` for this block 
 
 Use `class="text"` to define an inline-block.
 
+###  inline  ###
+
+The `inline` class, when set on a `<ul>` or `<ol>` list, will make the list items run inline (but one-per-line) rather than in a block.
+Note that a line-break is not forced before or after an inline list.
+You can use `inline` in conjunction with `block` and `text` to achieve this style within those display modes.
+
+On other elements, the `inline` class sets `display` to `inline`.
+
 ###  pad  ###
 
 The `pad-start` and `pad-end` classes will set `margin-inline-start` and `margin-inline-end`, respectively, to `auto`.
@@ -59,13 +67,6 @@ Use both if you want to center content.
 
 The `align-start` and `align-end` classes will set `text-align` to `start` or `end`.
 Use both to justify text.
-
-###  inline  ###
-
-The `inline` class, when set on a `<ul>` or `<ol>` list, will make the list items run inline (but one-per-line) rather than in a block.
-Note that a line-break is not forced before or after an inline list.
-
-On other elements, the `inline` class sets `display` to `inline`.
 
 ###  `<u>`  ###
 

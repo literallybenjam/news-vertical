@@ -41,7 +41,7 @@
 *.align-start.align-end {
     text-align: justify;
 }
-*.block {
+*.block, *.block.inline {
     display: block;
     max-block-size: 100%;
     inline-size: 16rem;
@@ -67,7 +67,7 @@
     max-width: fit-content;
     text-align: justify;
 }
-*.text {
+*.text, *.text.inline {
     display: inline-block;
     vertical-align: baseline;
     line-height: 1;
