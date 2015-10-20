@@ -45,9 +45,9 @@
     display: block;
     block-size: auto;
     max-block-size: 100%;
-    inline-size: -webkit-max-content;
-    inline-size: -moz-max-content;
-    inline-size: max-content;
+    inline-size: -webkit-min-content;
+    inline-size: -moz-min-content;
+    inline-size: min-content;
     max-inline-size: 16rem;
     text-overflow: ellipsis;
     overflow: auto;
@@ -56,9 +56,9 @@
     margin: 1rem 0;
     width: auto;
     max-width: 100%;
-    height: -webkit-max-content;
-    height: -moz-max-content;
-    height: max-content;
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
     max-height: 16rem;
     text-align: start;
     overflow-y: hidden;
@@ -67,9 +67,9 @@
     margin: 0 1rem;
     height: auto;
     max-height: 100%;
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content;
     max-width: 16rem;
     text-align: justify;
     overflow-x: hidden;
