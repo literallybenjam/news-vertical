@@ -44,9 +44,9 @@
 *.block, *.block.inline {
     display: block;
     max-block-size: 100%;
-    inline-size: 16rem;
-    max-inline-size: -moz-fit-content;
-    max-inline-size: fit-content;
+    inline-size: -moz-fit-content;
+    inline-size: fit-content;
+    max-inline-size: 16rem;
     text-overflow: ellipsis;
     overflow: auto;
 }
@@ -54,18 +54,18 @@
     margin: 1rem 0;
     width: 100%;
     max-width: none;
+    height: -moz-fit-content;
+    height: fit-content;
     height: 16rem;
-    max-height: -moz-fit-content;
-    max-height: fit-content;
     text-align: start;
 }
 *.block.horizontal {
     margin: 0 1rem;
     height: 100%;
     max-height: none;
+    width: -moz-fit-content;
+    width: fit-content;
     width: 16rem;
-    max-width: -moz-fit-content;
-    max-width: fit-content;
     text-align: justify;
 }
 *.text, *.text.inline {
