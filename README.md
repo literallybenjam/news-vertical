@@ -60,6 +60,13 @@ Use both if you want to center content.
 The `align-start` and `align-end` classes will set `text-align` to `start` or `end`.
 Use both to justify text.
 
+###  inline  ###
+
+The `inline` class, when set on a `<ul>` or `<ol>` list, will make the list items run inline (but one-per-line) rather than in a block.
+Note that a line-break is not forced before or after an inline list.
+
+On other elements, the `inline` class sets `display` to `inline`.
+
 ###  `<u>`  ###
 
 The `<u>` element should be used to mark up chinese (or similar) proper names. The optional class `title` should be set when marking up titles of works, and will produce a wavy underline.

@@ -72,6 +72,9 @@
     vertical-align: baseline;
     line-height: 1;
 }
+*.inline {
+    display: inline;
+}
 
 html {
     margin: 0;
@@ -259,6 +262,25 @@ ol {
 }
 ul {
     list-style-type: circle;
+}
+ol.inline, ul.inline {
+    margin: 0;
+    padding: 0;
+    counter-reset: inline-list;
+}
+ol.inline > li, ul.inline > li {
+    display: inline;
+    counter-increment: inline-list;
+}
+ol.inline > li::before {
+    content: counter(inline-list, decimal-leading-zero) ". ";
+}
+ul.inline > li::before {
+    content: counter(inline-list, circle) " ";
+}
+ol.inline > li:not(:last-child)::after, ul.inline > li:not(:last-child)::after {
+    white-space: pre-line;
+    content: "\0A";
 }
 
 main a {
