@@ -45,8 +45,6 @@
     display: block;
     margin-block-start: 1rem;
     margin-block-end: 1rem;
-    margin-inline-start: 0;
-    margin-inline-end: 0;
     max-block-size: 100%;
     max-inline-size: 16rem;
     text-overflow: ellipsis;
