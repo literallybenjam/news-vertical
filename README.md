@@ -26,11 +26,7 @@ NEWS-VERTICAL expects pages to have the following layout:
         <main>
             <!--  Page content goes here  -->
         </main>
-        <footer>
-            <span>Footer content 1</span>
-            <span>Footer content 2</span>
-            <!--  …  -->
-        </footer>
+        <footer>Footer content</footer>
     </body>
 </html>
 ```
