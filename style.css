@@ -45,12 +45,12 @@
     display: block;
     max-block-size: 100%;
     max-inline-size: 16rem;
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
-    height: -webkit-max-content;
-    height: -moz-max-content;
-    height: max-content;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
     text-overflow: ellipsis;
     overflow: auto;
 }
