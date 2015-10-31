@@ -44,7 +44,7 @@ It is recommended that you only set `vertical` and `horizontal` classes on eleme
 
 ###  blocks  ###
 
-Use `class="block"` to define a block. The maximum `inline-size` for this block is `16rem`, but the block will shrink to fit its content.
+Use `class="block"` to define a block. The maximum `inline-size` for this block is `18rem`, but the block will shrink to fit its content.
 
 ###  text  ###
 

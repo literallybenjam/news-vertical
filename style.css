@@ -47,8 +47,8 @@
     display: block;
     -webkit-logical-height: 100%;
     block-size: 100%;
-    -webkit-max-logical-width: 16rem;
-    max-inline-size: 16rem;
+    -webkit-max-logical-width: 18rem;
+    max-inline-size: 18rem;
     text-overflow: ellipsis;
     overflow: auto;
 }
@@ -57,7 +57,7 @@
     padding: 0 1rem;
     width: calc(100% - 2rem);
     height: auto;
-    max-height: 16rem;
+    max-height: 18rem;
     text-align: start;
     overflow-y: hidden;
 }
@@ -66,7 +66,7 @@
     padding: 1rem 0;
     height: calc(100% - 2rem);
     width: auto;
-    max-width: 16rem;
+    max-width: 18rem;
     text-align: justify;
     overflow-x: hidden;
 }
