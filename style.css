@@ -142,12 +142,12 @@ body > header ~ aside {
     justify-content: space-between;
     margin: 0;
     padding: 0;
-    border-top: .05rem currentColor solid;
-    border-bottom: .05rem currentColor solid;
-    height: .9rem;
+    border-top: thin currentColor solid;
+    border-bottom: thin currentColor solid;
+    height: 1rem;
     width: 28rem;
     font-size: .75rem;
-    line-height: .9rem;
+    line-height: 1rem;
     white-space: nowrap;
     text-align: end;
 }
