@@ -191,12 +191,12 @@ aside {
     display: block;
     -webkit-margin-before: 1rem;
     -webkit-margin-after: 1rem;
-    -webkit-padding-before: 1rem;
-    -webkit-padding-after: 1rem;
+    -webkit-padding-start: 1rem;
+    -webkit-padding-end: 1rem;
     margin-block-start: 1rem;
     margin-block-end: 1rem;
-    padding-block-start: 1rem;
-    padding-block-end: 1rem;
+    padding-inline-start: 1rem;
+    padding-inline-end: 1rem;
 }
 
 h1 {
