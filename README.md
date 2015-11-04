@@ -40,7 +40,8 @@ NEWS-VERTICAL expects pages to have the following layout:
 
 The `vertical` and `horizontal` classes may be added to a block to change the writing mode.
 Using both creates a vertical writing mode that moves from left to right instead of from right to left.
-It is recommended that you only set `vertical` and `horizontal` classes on elements with class `block` or `text`.
+You can set this on the `<html>` element to change the writing mode for the whole document; the default is `vertical`.
+Otherwise, it is recommended that you only set `vertical` and `horizontal` classes on elements with class `block` or `text`.
 
 ###  blocks  ###
 

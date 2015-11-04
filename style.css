@@ -104,7 +104,11 @@ html {
 }
 body {
     margin: 1rem;
+    -webkit-margin-before: auto;
+    margin-block-start: auto;
     padding: 0;
+    -webkit-max-logical-width: 28rem;
+    max-inline-size: 28rem;
 }
 body > header {
     -webkit-writing-mode: horizontal-tb;
@@ -173,8 +177,8 @@ aside {
     display: block;
     -webkit-margin-before: 1rem;
     -webkit-margin-after: 1rem;
-    -webkit-margin-start: 1rem;
-    -webkit-margin-end: 1rem;
+    -webkit-padding-before: 1rem;
+    -webkit-padding-after: 1rem;
     margin-block-start: 1rem;
     margin-block-end: 1rem;
     padding-block-start: 1rem;
