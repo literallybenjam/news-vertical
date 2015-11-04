@@ -185,7 +185,7 @@ html.horizontal body > header ~ footer, body.horizontal > header ~ footer {
 }
 body > header ~ main {
     display: block;
-    margin-top: 7rem;
+    margin-top: 8rem;
     margin-bottom: 2rem;
 }
 section {
