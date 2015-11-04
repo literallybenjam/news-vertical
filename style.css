@@ -57,7 +57,6 @@
 }
 *.block.vertical, *.block.vertical.horizontal {
     margin: 1rem 0;
-    padding: 0;
     width: 100%;
     height: auto;
     max-height: 18rem;
@@ -65,7 +64,6 @@
 }
 *.block.horizontal {
     margin: 0 1rem;
-    padding: 0;
     height: 100%;
     width: auto;
     max-width: 18rem;
@@ -346,7 +344,7 @@ ol {
     list-style-type: decimal-leading-zero;
 }
 ul {
-    list-style-type: circle;
+    list-style-type: "→";
 }
 ol.inline, ul.inline {
     margin: 0;
