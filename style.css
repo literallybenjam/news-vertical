@@ -57,7 +57,7 @@
 }
 *.block.vertical, *.block.vertical.horizontal {
     margin: 1rem 0;
-    padding: 0 1rem;
+    padding: 0;
     width: calc(100% - 2rem);
     height: auto;
     max-height: 18rem;
@@ -65,7 +65,7 @@
 }
 *.block.horizontal {
     margin: 0 1rem;
-    padding: 1rem 0;
+    padding: 0;
     height: calc(100% - 2rem);
     width: auto;
     max-width: 18rem;
@@ -213,11 +213,11 @@ h1 {
     padding: 0;
 }
 h2 {
-    -webkit-margin-before: 0;
+    -webkit-margin-before: 1rem;
     -webkit-margin-after: 1rem;
     -webkit-margin-start: 0;
     -webkit-margin-end: 0;
-    margin-block-start: 0;
+    margin-block-start: 1rem;
     margin-block-end: 1rem;
     margin-inline-start: 0;
     margin-inline-end: 0;
