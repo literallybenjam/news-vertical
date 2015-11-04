@@ -353,13 +353,13 @@ ol.inline, ul.inline {
 }
 ol.inline > li, ul.inline > li {
     display: inline;
-    counter-increment: inline-list;
 }
 ol.inline > li::before {
+    counter-increment: inline-list;
     content: counter(inline-list, decimal-leading-zero) ". ";
 }
 ul.inline > li::before {
-    content: counter(inline-list, "→") " ";
+    content: "→ ";
 }
 ol.inline > li:not(:last-child)::after, ul.inline > li:not(:last-child)::after {
     content: " ";
