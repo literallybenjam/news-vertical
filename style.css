@@ -15,16 +15,19 @@
     -webkit-writing-mode: vertical-rl;
     -ms-writing-mode: vertical-rl;
     writing-mode: vertical-rl;
+    text-align: start;
 }
 *.horizontal {
     -webkit-writing-mode: horizontal-tb;
     -ms-writing-mode: horizontal-tb;
     writing-mode: horizontal-tb;
+    text-align: justify;
 }
 *.vertical.horizontal {
     -webkit-writing-mode: vertical-lr;
     -ms-writing-mode: vertical-lr;
     writing-mode: vertical-lr;
+    text-align: start;
 }
 *.pad-start {
     -webkit-margin-start: auto;
@@ -58,7 +61,6 @@
     width: calc(100% - 2rem);
     height: auto;
     max-height: 18rem;
-    text-align: start;
     overflow-y: hidden;
 }
 *.block.horizontal {
@@ -67,7 +69,6 @@
     height: calc(100% - 2rem);
     width: auto;
     max-width: 18rem;
-    text-align: justify;
     overflow-x: hidden;
 }
 *.text, *.text.inline {
