@@ -105,7 +105,7 @@ html {
 body {
     position: relative;
     margin: auto;
-    padding: 1rem;
+    padding: 1rem 2rem;
     -webkit-max-logical-width: 36rem;
     max-inline-size: 36rem;
 }
