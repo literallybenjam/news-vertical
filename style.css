@@ -115,7 +115,7 @@ body > header {
     writing-mode: horizontal-tb;
     position: absolute;
     top: 1rem;
-    right: 1rem;
+    right: 2rem;
     margin: 1rem 0;
     padding: 0;
     height: 3rem;
@@ -127,7 +127,7 @@ body > header {
 }
 html.horizontal body > header, body.horizontal > header {
     right: auto;
-    left: 1rem;
+    left: 2rem;
     text-align: start;
 }
 body > header ~ aside {
@@ -136,7 +136,7 @@ body > header ~ aside {
     writing-mode: horizontal-tb;
     position: absolute;
     top: 6rem;
-    right: 1rem;
+    right: 2rem;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
@@ -153,7 +153,7 @@ body > header ~ aside {
 }
 html.horizontal body > header ~ aside, body.horizontal > header ~ aside {
     right: auto;
-    left: 1rem;
+    left: 2rem;
     text-align: start;
 }
 body > header ~ footer {
@@ -161,7 +161,7 @@ body > header ~ footer {
     -ms-writing-mode: horizontal-tb;
     writing-mode: horizontal-tb;
     position: absolute;
-    left: 1rem;
+    left: 2rem;
     bottom: 1rem;
     margin: 0;
     padding: 0;
@@ -174,7 +174,7 @@ body > header ~ footer {
 }
 html.horizontal body > header ~ footer, body.horizontal > header ~ footer {
     left: auto;
-    right: 1rem;
+    right: 2rem;
     text-align: end;
 }
 body > header ~ main {
