@@ -103,12 +103,11 @@ html {
     hyphens: auto;
 }
 body {
-    margin: 1rem;
-    -webkit-margin-before: auto;
-    margin-block-start: auto;
-    padding: 0;
-    -webkit-max-logical-width: 28rem;
-    max-inline-size: 28rem;
+    display: relative;
+    margin: 0 0 auto auto;
+    padding: 1rem;
+    -webkit-max-logical-width: 36rem;
+    max-inline-size: 36rem;
 }
 body > header {
     -webkit-writing-mode: horizontal-tb;
