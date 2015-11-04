@@ -200,7 +200,7 @@ aside {
     margin-inline-end: 1rem;
     border-inline-start: .25rem currentColor double;
     padding-inline-start: .75rem;
-    color: #636363;
+    font-weight: 200;
 }
 
 h1 {
@@ -377,7 +377,7 @@ i {
     text-decoration-style: dashed;
 }
 small {
-    font-weight: 200;
+    font-weight: lighter;
 }
 strong {
     font-weight: 700;
