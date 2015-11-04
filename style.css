@@ -370,7 +370,7 @@ em {
 }
 i {
     text-decoration-line: underline;
-    text-decoration-style: wavy;
+    text-decoration-style: dashed;
 }
 small {
     font-weight: 200;
@@ -381,7 +381,4 @@ strong {
 u {
     text-decoration: underline;
     text-decoration-style: solid;
-}
-i u {
-    text-decoration: none;
 }
