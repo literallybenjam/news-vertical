@@ -103,7 +103,7 @@ html {
     hyphens: auto;
 }
 body {
-    display: relative;
+    position: relative;
     margin: 0 0 auto auto;
     padding: 1rem;
     -webkit-max-logical-width: 36rem;
