@@ -359,7 +359,7 @@ ol.inline > li::before {
     content: counter(inline-list, decimal-leading-zero) ". ";
 }
 ul.inline > li::before {
-    content: counter(inline-list, circle) " ";
+    content: counter(inline-list, "→") " ";
 }
 ol.inline > li:not(:last-child)::after, ul.inline > li:not(:last-child)::after {
     content: " ";
