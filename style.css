@@ -104,7 +104,7 @@ html {
 }
 body {
     position: relative;
-    margin: 0 0 auto auto;
+    margin: auto;
     padding: 1rem;
     -webkit-max-logical-width: 36rem;
     max-inline-size: 36rem;
@@ -124,6 +124,11 @@ body > header {
     line-height: 3rem;
     white-space: nowrap;
     text-align: end;
+}
+html.horizontal body > header, body.horizontal > header {
+    right: auto;
+    left: 1rem;
+    text-align: start;
 }
 body > header ~ aside {
     -webkit-writing-mode: horizontal-tb;
@@ -146,6 +151,11 @@ body > header ~ aside {
     white-space: nowrap;
     text-align: end;
 }
+html.horizontal body > header ~ aside, body.horizontal > header ~ aside {
+    right: auto;
+    left: 1rem;
+    text-align: start;
+}
 body > header ~ footer {
     -webkit-writing-mode: horizontal-tb;
     -ms-writing-mode: horizontal-tb;
@@ -161,6 +171,11 @@ body > header ~ footer {
     line-height: 1rem;
     white-space: nowrap;
     text-align: start;
+}
+html.horizontal body > header ~ footer, body.horizontal > header ~ footer {
+    left: auto;
+    right: 1rem;
+    text-align: end;
 }
 body > header ~ main {
     display: block;
