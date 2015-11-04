@@ -142,6 +142,7 @@ body > header ~ aside {
     justify-content: space-between;
     margin: 0;
     padding: 0;
+    border: none;
     border-top: thin currentColor solid;
     border-bottom: thin currentColor solid;
     height: 1rem;
@@ -195,8 +196,10 @@ aside {
     -webkit-padding-end: 1rem;
     margin-block-start: 1rem;
     margin-block-end: 1rem;
-    padding-inline-start: 1rem;
-    padding-inline-end: 1rem;
+    margin-inline-start: 1rem;
+    margin-inline-end: 1rem;
+    border-inline-start: .25rem currentColor double;
+    padding-inline-start: .75rem;
 }
 
 h1 {
