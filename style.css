@@ -364,8 +364,7 @@ ul.inline > li::before {
     content: counter(inline-list, circle) " ";
 }
 ol.inline > li:not(:last-child)::after, ul.inline > li:not(:last-child)::after {
-    white-space: pre-line;
-    content: "\0A";
+    content: " ";
 }
 
 main a {
@@ -408,4 +407,7 @@ strong {
 u {
     text-decoration: underline;
     text-decoration-style: solid;
+}
+u.title {
+    text-decoration-style: wavy;
 }

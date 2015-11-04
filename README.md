@@ -53,8 +53,7 @@ Use `class="text"` to define an inline-block.
 
 ###  inline  ###
 
-The `inline` class, when set on a `<ul>` or `<ol>` list, will make the list items run inline (but one-per-line) rather than in a block.
-Note that a line-break is not forced before or after an inline list.
+The `inline` class, when set on a `<ul>` or `<ol>` list, will make the list items run inline rather than in a block.
 You can use `inline` in conjunction with `block` and `text` to achieve this style within those display modes.
 
 On other elements, the `inline` class sets `display` to `inline`.
