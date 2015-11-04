@@ -107,8 +107,12 @@ body {
     position: relative;
     margin: auto;
     padding: 1rem 2rem;
-    -webkit-max-logical-width: 36rem;
-    max-inline-size: 36rem;
+    -webkit-max-logical-width: 35rem;
+    max-inline-size: 35rem;
+}
+html.horizontal:not(.vertical) body:not(.vertical), body.horizontal:not(.vertical) {
+    -webkit-max-logical-width: 28rem;
+    max-inline-size: 28rem;
 }
 body > header {
     -webkit-writing-mode: horizontal-tb;
