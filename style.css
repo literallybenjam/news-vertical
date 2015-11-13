@@ -240,8 +240,8 @@ blockquote p::before {
     display: inline-block;
     -webkit-margin-start: -1rem;
     -webkit-margin-end: 0;
-    margin-block-start: -1rem;
-    margin-block-end: 0;
+    margin-inline-start: -1rem;
+    margin-inline-end: 0;
     -webkit-logical-width: 1rem;
     inline-size: 1rem;
     text-align: end;
