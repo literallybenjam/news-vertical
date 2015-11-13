@@ -209,8 +209,10 @@ aside {
     display: block;
     -webkit-margin-before: 1rem;
     -webkit-margin-after: 1rem;
-    -webkit-padding-start: 1rem;
-    -webkit-padding-end: 1rem;
+    -webkit-margin-start: 1rem;
+    -webkit-margin-end: 1rem;
+    -webkit-border-start: .25rem currentColor double;
+    -webkit-padding-start: .75rem;
     margin-block-start: 1rem;
     margin-block-end: 1rem;
     margin-inline-start: 1rem;
@@ -220,6 +222,43 @@ aside {
     font-weight: 200;
 }
 
+blockquote {
+    -webkit-margin-before: 1rem;
+    -webkit-margin-after: 1rem;
+    -webkit-margin-start: 1rem;
+    -webkit-margin-end: 1rem;
+    -webkit-padding-start: 2rem;
+    -webkit-padding-end: 2rem;
+    margin-block-start: 1rem;
+    margin-block-end: 1rem;
+    margin-inline-start: 1rem;
+    margin-inline-end: 1rem;
+    padding-inline-start: 1rem;
+    padding-inline-end: 1rem;
+}
+blockquote p::before {
+    display: inline-block;
+    -webkit-margin-start: -1rem;
+    -webkit-margin-end: 0;
+    margin-block-start: -1rem;
+    margin-block-end: 0;
+    -webkit-logical-width: 1rem;
+    inline-size: 1rem;
+    text-align: end;
+    content: open-quote;
+}
+blockquote p::after {
+    content: no-close-quote;
+}
+blockquote p:last-of-type::after {
+    content: close-quote;
+}
+blockquote footer {
+    text-align: end;
+}
+blockquote footer::before{
+    content: "– ";
+}
 h1 {
     margin: 0;
     padding: 0;
