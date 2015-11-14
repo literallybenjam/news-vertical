@@ -218,6 +218,9 @@ body > header ~ main {
     margin-top: 8rem;
     margin-bottom: 2rem;
 }
+main {
+    position: relative;
+}
 section {
     display: block;
     -webkit-margin-before: 2rem;
