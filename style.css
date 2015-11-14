@@ -82,6 +82,7 @@
     display: inline;
 }
 *.footnote *.note {
+    cursor: auto;
     display: block;
     position: absolute;
     offset-inline-start: 0;
