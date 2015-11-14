@@ -70,7 +70,14 @@ Use both to justify text.
 
 ###  `<u>`  ###
 
-The `<u>` element should be used to mark up chinese (or similar) proper names. The optional class `title` should be set when marking up titles of works, and will produce a wavy underline.
+The `<u>` element should be used to mark up chinese (or similar) proper names.
+The optional class `title` should be set when marking up titles of works, and will produce a wavy underline.
+
+###  footnotes  ###
+
+Use `class="footnote"` to denote text with a footnote.
+Elements of this class should contain an element with `class="note"`, whose contents represent the footnote.
+The note text is only displayed when the cursor hovers over the footnote element.
 
 ##  Considerations:  ##
 
