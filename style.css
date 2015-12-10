@@ -475,6 +475,9 @@ em {
 i {
     font-variant: small-caps;
 }
+time {
+    font-weight: bolder;
+}
 small {
     font-weight: lighter;
 }
