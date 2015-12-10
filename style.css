@@ -70,7 +70,7 @@
     max-width: 18rem;
     overflow-x: hidden;
 }
-*.text, *.text.inline {
+*.text, *.vertical.horizontal.text, *.text.inline {
     display: inline-block;
     vertical-align: top;
     line-height: 1;
