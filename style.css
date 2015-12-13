@@ -418,13 +418,30 @@ ol, ul {
     padding-block-end: 0;
     padding-inline-start: 2em;
     padding-inline-end: 0;
-    text-align: start;
 }
 ol {
     list-style-type: decimal-leading-zero;
 }
+ol ol {
+    list-style-type: upper-alpha;
+}
+ol ol ol {
+    list-style-type: lower-alpha;
+}
+ol ol ol ol {
+    list-style-type: decimal;
+}
 ul {
     list-style-type: "→ ";
+}
+ul ul {
+    list-style-type: "† ";
+}
+ul ul ul {
+    list-style-type: "⇒ ";
+}
+ul ul ul ul {
+    list-style-type: "‡ ";
 }
 ol.inline, ul.inline {
     margin: 0;
@@ -443,6 +460,35 @@ ul.inline > li::before {
 }
 ol.inline > li:not(:last-child)::after, ul.inline > li:not(:last-child)::after {
     content: " ";
+}
+ol.bibliography, ul.bibliography {
+    -webkit-padding-before: 2rem;
+    padding-inline-start: 2rem;
+}
+ul.bibliography {
+    list-style-type: none;
+}
+ol.bibliography li, ul.bibliography li {
+    -webkit-margin-before: .5rem;
+    -webkit-margin-after: .5rem;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    margin-block-start: .5rem;
+    margin-block-end: .5rem;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    text-indent: -2rem;
+}
+ol.bibliography p, ul.bibliography p {
+    -webkit-margin-before: .5rem;
+    -webkit-margin-after: .5rem;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    margin-block-start: .5rem;
+    margin-block-end: .5rem;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    text-indent: 0;
 }
 
 main a {

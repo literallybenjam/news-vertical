@@ -79,6 +79,22 @@ Use `class="footnote"` to denote text with a footnote.
 Elements of this class should contain an element with `class="note"`, whose contents represent the footnote.
 The note text is only displayed when the cursor hovers over the footnote element.
 
+###  bibliography  ###
+
+The `bibliography` class, when set on a `<ul>` or `<ol>` list, will format the list as a bibliography.
+A sample bibliography markup is as follows:
+
+```html
+<ul class="bibliography">
+    <li>
+        Some Author. <i>An item</i>. <a href="http://example.com">http://example.com</a>.
+        <p>
+            An annotation for this bibliography item.
+        </p>
+    </li>
+</ul>
+```
+
 ##  Considerations:  ##
 
 NEWS-VERTICAL makes fair use of such features as `margin-block-start` to style content (for example, headings) regardless of `writing-mode` or `direction`.
