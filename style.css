@@ -166,6 +166,12 @@ body > header {
     white-space: nowrap;
     text-align: end;
 }
+body > header h1 {
+    font-size: inherit;
+    line-height: inherit;
+    margin: 0;
+    padding: 0;
+}
 html.horizontal body > header, body.horizontal > header {
     right: auto;
     left: 2rem;
@@ -301,8 +307,18 @@ blockquote > footer::before{
     content: "– ";
 }
 h1 {
-    margin: 0;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 1rem;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    margin-block-start: 0;
+    margin-block-end: 1rem;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
     padding: 0;
+    font-size: 2rem;
+    line-height: 2rem;
+    text-align: start;
 }
 h2 {
     -webkit-margin-before: 2rem;
