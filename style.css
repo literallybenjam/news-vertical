@@ -159,10 +159,10 @@ body > header {
     right: 2rem;
     margin: 1rem 0;
     padding: 0;
-    height: 2.8rem;
+    height: 3rem;
     width: 28rem;
-    font-size: 2.8rem;
-    line-height: 2.8rem;
+    font-size: calc(3rem / 1.4);
+    line-height: 3rem;
     white-space: nowrap;
     text-align: end;
 }
@@ -182,7 +182,7 @@ body > header ~ aside {
     -ms-writing-mode: horizontal-tb;
     writing-mode: horizontal-tb;
     position: absolute;
-    top: 5.6rem;
+    top: 4.4rem;
     right: 2rem;
     display: flex;
     flex-direction: row-reverse;
@@ -227,7 +227,7 @@ html.horizontal body > header ~ footer, body.horizontal > header ~ footer {
 }
 body > header ~ main {
     display: block;
-    margin-top: 8rem;
+    margin-top: 7.2rem;
     margin-bottom: 2.4rem;
 }
 main {
