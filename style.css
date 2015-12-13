@@ -282,6 +282,8 @@ blockquote {
     margin-inline-end: 1rem;
     padding-inline-start: 1rem;
     padding-inline-end: 1rem;
+    font-size: .8rem;
+    line-height: 1rem;
 }
 blockquote > p::before {
     display: inline-block;
