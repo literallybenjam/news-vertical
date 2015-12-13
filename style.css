@@ -87,18 +87,18 @@
     position: absolute;
     offset-inline-start: 0;
     offset-inline-end: 0;
-    -webkit-margin-before: .5rem;
-    -webkit-margin-after: .5rem;
+    -webkit-margin-before: .7rem;
+    -webkit-margin-after: .7rem;
     -webkit-margin-start: 0;
     -webkit-margin-end: 0;
-    margin-block-start: .5rem;
-    margin-block-end: .5rem;
+    margin-block-start: .7rem;
+    margin-block-end: .7rem;
     margin-inline-start: 0;
     margin-inline-end: 0;
     border: none;
     padding: 0;
     font-family: inherit;
-    font-size: .75rem;
+    font-size: calc(1rem / 1.4);
     font-weight: 200;
     font-style: normal;
     font-variant: normal;
@@ -107,7 +107,7 @@
     text-indent: 0;
     color: #3b3b3b;
     background: #f5f5f5;
-    box-shadow: 0 0 .5rem .5rem #f5f5f5;
+    box-shadow: 0 0 .7rem .7rem #f5f5f5;
     opacity: 0;
     visibility: hidden;
     transition: opacity .5s, visibility .5s;
@@ -124,7 +124,7 @@ html {
     font-family: serif;
     font-weight: 300;
     font-synthesis: none;
-    line-height: 1.25;
+    line-height: 1.4rem;
     color: #3b3b3b;
     background: #f5f5f5;
     -webkit-writing-mode: vertical-rl;
@@ -142,7 +142,7 @@ html {
 body {
     position: relative;
     margin: auto;
-    padding: 1rem 2rem;
+    padding: 1.4rem 2rem;
     -webkit-max-logical-width: 35rem;
     max-inline-size: 35rem;
 }
@@ -155,14 +155,14 @@ body > header {
     -ms-writing-mode: horizontal-tb;
     writing-mode: horizontal-tb;
     position: absolute;
-    top: 1rem;
+    top: 1.4rem;
     right: 2rem;
     margin: 1rem 0;
     padding: 0;
-    height: 3rem;
+    height: 2.8rem;
     width: 28rem;
-    font-size: 3rem;
-    line-height: 3rem;
+    font-size: 2.8rem;
+    line-height: 2.8rem;
     white-space: nowrap;
     text-align: end;
 }
@@ -182,7 +182,7 @@ body > header ~ aside {
     -ms-writing-mode: horizontal-tb;
     writing-mode: horizontal-tb;
     position: absolute;
-    top: 6rem;
+    top: 5.6rem;
     right: 2rem;
     display: flex;
     flex-direction: row-reverse;
@@ -194,7 +194,7 @@ body > header ~ aside {
     border-bottom: thin currentColor solid;
     height: 1rem;
     width: 28rem;
-    font-size: .75rem;
+    font-size: calc(1rem / 1.4);
     line-height: 1rem;
     white-space: nowrap;
     text-align: end;
@@ -210,12 +210,12 @@ body > header ~ footer {
     writing-mode: horizontal-tb;
     position: absolute;
     left: 2rem;
-    bottom: 1rem;
+    bottom: 1.4rem;
     margin: 0;
     padding: 0;
     height: 1rem;
     color: #828282;
-    font-size: .75rem;
+    font-size: calc(1rem / 1.4);
     line-height: 1rem;
     white-space: nowrap;
     text-align: start;
@@ -228,19 +228,19 @@ html.horizontal body > header ~ footer, body.horizontal > header ~ footer {
 body > header ~ main {
     display: block;
     margin-top: 8rem;
-    margin-bottom: 2rem;
+    margin-bottom: 2.4rem;
 }
 main {
     position: relative;
 }
 section {
     display: block;
-    -webkit-margin-before: 2rem;
-    -webkit-margin-after: 1rem;
+    -webkit-margin-before: 2.8rem;
+    -webkit-margin-after: 1.4rem;
     -webkit-margin-start: 0;
     -webkit-margin-end: 0;
-    margin-block-start: 2rem;
-    margin-block-end: 1rem;
+    margin-block-start: 2.8rem;
+    margin-block-end: 1.4rem;
     margin-inline-start: 0;
     margin-inline-end: 0;
 }
@@ -254,14 +254,14 @@ section:last-child {
 }
 aside {
     display: block;
-    -webkit-margin-before: 1rem;
-    -webkit-margin-after: 1rem;
+    -webkit-margin-before: 1.4rem;
+    -webkit-margin-after: 1.4rem;
     -webkit-margin-start: 1rem;
     -webkit-margin-end: 1rem;
     -webkit-border-start: .25rem currentColor double;
     -webkit-padding-start: .75rem;
-    margin-block-start: 1rem;
-    margin-block-end: 1rem;
+    margin-block-start: 1.4rem;
+    margin-block-end: 1.4rem;
     margin-inline-start: 1rem;
     margin-inline-end: 1rem;
     border-inline-start: .25rem currentColor double;
@@ -270,19 +270,19 @@ aside {
 }
 
 blockquote {
-    -webkit-margin-before: 1rem;
-    -webkit-margin-after: 1rem;
+    -webkit-margin-before: 1.4rem;
+    -webkit-margin-after: 1.4rem;
     -webkit-margin-start: 1rem;
     -webkit-margin-end: 1rem;
     -webkit-padding-start: 2rem;
     -webkit-padding-end: 2rem;
-    margin-block-start: 1rem;
-    margin-block-end: 1rem;
+    margin-block-start: 1.4rem;
+    margin-block-end: 1.4rem;
     margin-inline-start: 1rem;
     margin-inline-end: 1rem;
     padding-inline-start: 1rem;
     padding-inline-end: 1rem;
-    font-size: .8rem;
+    font-size: calc(1rem / 1.4);
     line-height: 1rem;
 }
 blockquote > p::before {
@@ -310,30 +310,30 @@ blockquote > footer::before{
 }
 h1 {
     -webkit-margin-before: 0;
-    -webkit-margin-after: 1rem;
+    -webkit-margin-after: 1.4rem;
     -webkit-margin-start: 0;
     -webkit-margin-end: 0;
     margin-block-start: 0;
-    margin-block-end: 1rem;
+    margin-block-end: 1.4rem;
     margin-inline-start: 0;
     margin-inline-end: 0;
     padding: 0;
-    font-size: 2rem;
-    line-height: 2rem;
+    font-size: 2.8rem;
+    line-height: 2.8rem;
     text-align: start;
 }
 h2 {
-    -webkit-margin-before: 2rem;
-    -webkit-margin-after: 1rem;
+    -webkit-margin-before: 2.8rem;
+    -webkit-margin-after: 1.4rem;
     -webkit-margin-start: 0;
     -webkit-margin-end: 0;
-    margin-block-start: 2rem;
-    margin-block-end: 1rem;
+    margin-block-start: 2.8rem;
+    margin-block-end: 1.4rem;
     margin-inline-start: 0;
     margin-inline-end: 0;
     padding: 0;
-    font-size: 1.5rem;
-    line-height: 1.5rem;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
     font-weight: 400;
     text-align: start;
 }
@@ -342,73 +342,73 @@ h2:first-child {
     margin-block-start: 0;
 }
 h3 {
-    -webkit-margin-before: 1rem;
-    -webkit-margin-after: 1rem;
+    -webkit-margin-before: 1.4rem;
+    -webkit-margin-after: 1.4rem;
     -webkit-margin-start: 0;
     -webkit-margin-end: 0;
-    margin-block-start: 1rem;
-    margin-block-end: 1rem;
+    margin-block-start: 1.4rem;
+    margin-block-end: 1.4rem;
     margin-inline-start: 0;
     margin-inline-end: 0;
     padding: 0;
     font-size: 1rem;
-    line-height: 1rem;
+    line-height: 1.4rem;
     font-weight: 700;
     font-variant: small-caps;
     text-align: center;
 }
 h4 {
-    -webkit-margin-before: 1rem;
-    -webkit-margin-after: .5rem;
+    -webkit-margin-before: 1.4rem;
+    -webkit-margin-after: .7rem;
     -webkit-margin-start: 0;
     -webkit-margin-end: 0;
-    margin-block-start: 1rem;
-    margin-block-end: .5rem;
+    margin-block-start: 1.4rem;
+    margin-block-end: .7rem;
     margin-inline-start: 0;
     margin-inline-end: 0;
     padding: 0;
     font-size: 1rem;
-    line-height: 1rem;
+    line-height: 1.4rem;
     font-weight: 600;
     text-align: center;
 }
 h5 {
-    -webkit-margin-before: .5rem;
-    -webkit-margin-after: .5rem;
+    -webkit-margin-before: .7rem;
+    -webkit-margin-after: .7rem;
     -webkit-margin-start: 0;
     -webkit-margin-end: 0;
-    margin-block-start: .5rem;
-    margin-block-end: .5rem;
+    margin-block-start: .7rem;
+    margin-block-end: .7rem;
     margin-inline-start: 0;
     margin-inline-end: 0;
     padding: 0;
     font-size: 1rem;
-    line-height: 1rem;
+    line-height: 1.4rem;
     font-variant: small-caps;
     text-align: start;
 }
 h6 {
-    -webkit-margin-before: .5rem;
+    -webkit-margin-before: .7rem;
     -webkit-margin-after: 0;
     -webkit-margin-start: 0;
     -webkit-margin-end: 0;
-    margin-block-start: .5rem;
+    margin-block-start: .7rem;
     margin-block-end: 0;
     margin-inline-start: 0;
     margin-inline-end: 0;
     padding: 0;
     font-size: 1rem;
-    line-height: 1rem;
+    line-height: 1.4rem;
     text-align: start;
 }
 hr {
     margin: 0;
     -webkit-padding-before: 0;
-    -webkit-padding-after: 1rem;
+    -webkit-padding-after: 1.4rem;
     -webkit-padding-start: 0;
     -webkit-padding-end: 0;
     padding-block-start: 0;
-    padding-block-end: 1rem;
+    padding-block-end: 1.4rem;
     padding-inline-start: 0;
     padding-inline-end: 0;
     border: 0;
@@ -487,23 +487,23 @@ ul.bibliography {
     list-style-type: none;
 }
 ol.bibliography li, ul.bibliography li {
-    -webkit-margin-before: .5rem;
-    -webkit-margin-after: .5rem;
+    -webkit-margin-before: .7rem;
+    -webkit-margin-after: .7rem;
     -webkit-margin-start: 0;
     -webkit-margin-end: 0;
-    margin-block-start: .5rem;
-    margin-block-end: .5rem;
+    margin-block-start: .7rem;
+    margin-block-end: .7rem;
     margin-inline-start: 0;
     margin-inline-end: 0;
     text-indent: -2rem;
 }
 ol.bibliography p, ul.bibliography p {
-    -webkit-margin-before: .5rem;
-    -webkit-margin-after: .5rem;
+    -webkit-margin-before: .7rem;
+    -webkit-margin-after: .7rem;
     -webkit-margin-start: 0;
     -webkit-margin-end: 0;
-    margin-block-start: .5rem;
-    margin-block-end: .5rem;
+    margin-block-start: .7rem;
+    margin-block-end: .7rem;
     margin-inline-start: 0;
     margin-inline-end: 0;
     text-indent: 0;
