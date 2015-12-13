@@ -226,7 +226,7 @@ html.horizontal body > header ~ footer, body.horizontal > header ~ footer {
 }
 body > header ~ main {
     display: block;
-    margin-top: 7.2rem;
+    margin-top: 5.8rem;
     margin-bottom: 2.4rem;
 }
 main {
