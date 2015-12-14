@@ -614,10 +614,6 @@ blockquote > p::before {
     -webkit-margin-end: 0;
     margin-inline-start: -1rem;
     margin-inline-end: 0;
-    display: block;
-    float: left;
-    float: inline-start;
-    margin: 0;
     padding: 0;
     -webkit-logical-width: 1rem;
     inline-size: 1rem;
