@@ -50,13 +50,13 @@ Use `class="block"` to define a block. The maximum `inline-size` for this block 
 ###  text  ###
 
 Use `class="text"` to define an inline-block.
+You can use this on `<img>` or `<svg>` elements for picture text, or in combination with writing modes to create short spans of text running in a different direction.
 
 ###  inline  ###
 
 The `inline` class, when set on a `<ul>` or `<ol>` list, will make the list items run inline rather than in a block.
 You can use `inline` in conjunction with `block` and `text` to achieve this style within those display modes.
 
-The `inline` class can be used on `<img>` and `<svg>` elements to create inline images.
 On other elements, the `inline` class sets `display` to `inline`.
 
 ###  pad  ###

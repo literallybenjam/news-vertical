@@ -77,7 +77,7 @@
     max-width: 18rem;
     overflow-x: hidden;
 }
-*.text, *.vertical.horizontal.text, *.text.inline {
+*.text, *.vertical.text, *.horizontal.text, *.vertical.horizontal.text, *.text.inline {
     display: inline-block;
     vertical-align: top;
     line-height: 1;
@@ -309,6 +309,7 @@ figure {
     max-inline-size: 100%;
 }
 audio, iframe, img, svg, video {
+    display: block;
     -webkit-margin-before: .7rem;
     -webkit-margin-after: .7rem;
     -webkit-margin-start: auto;
@@ -320,12 +321,13 @@ audio, iframe, img, svg, video {
     -webkit-max-logical-width: 100%;
     max-inline-size: 100%;
 }
-img.inline, svg.inline {
+img.text, svg.text {
     display: inline-block;
     margin: 0;
-    padding: calc(.2rem / 1.4);
-    max-height: calc(1rem / 1.4);
-    max-width: calc(1rem / 1.4);
+    padding: calc(.2em / 1.4);
+    max-height: calc(1em / 1.4);
+    max-width: calc(1em / 1.4);
+    line-height: 1em;
     vertical-align: middle;
 }
 iframe[src*="//youtube.com/embed/"], iframe[src*="//www.youtube.com/embed/"] {
