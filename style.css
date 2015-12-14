@@ -292,7 +292,7 @@ blockquote > footer::before{
 
 /*  Figures and Embeds  */
 
-figure, iframe, svg, audio, video, img {
+figure {
     display: block;
     -webkit-margin-before: 1.4rem;
     -webkit-margin-after: 1.4rem;
@@ -308,8 +308,17 @@ figure, iframe, svg, audio, video, img {
     -webkit-max-logical-width: 100%;
     max-inline-size: 100%;
 }
-figure > figure, figure > iframe, figure > svg, figure > audio, figure > video, figure > img {
-    margin: 0;
+audio, iframe, img, svg, video {
+    -webkit-margin-before: .7rem;
+    -webkit-margin-after: .7rem;
+    -webkit-margin-start: auto;
+    -webkit-margin-end: auto;
+    margin-block-start: .7rem;
+    margin-block-end: .7rem;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    -webkit-max-logical-width: 100%;
+    max-inline-size: 100%;
 }
 img.inline, svg.inline {
     display: inline-block;
