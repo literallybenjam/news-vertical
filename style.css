@@ -683,7 +683,7 @@ main a {
     outline-width: 1px;
     outline-color: rgba(28,28,28,0);
     background: rgba(245,245,245,0);
-    font-weight: bolder;
+    font-weight: 400;
     transition: outline-color .5s, background .5s;
 }
 main a:hover{
@@ -706,8 +706,8 @@ del {
     text-decoration-style: double;
 }
 dfn {
-    font-style: inherit;
-    font-weight: bolder;
+    text-decoration: underline;
+    text-decoration-style: dashed;
 }
 em {
     text-decoration: underline;
