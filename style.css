@@ -648,6 +648,7 @@ blockquote > p:not(:empty):last-of-type::after {
 }
 p.verse {
     white-space: pre-line;
+    text-indent: 0;
     text-indent: 2rem hanging each-line;
 }
 p + p.verse {
