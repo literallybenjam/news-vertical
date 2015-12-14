@@ -282,10 +282,21 @@ aside {
     font-weight: 200;
 }
 footer {
+    margin: 0;
+    padding: 0;
     font-size: calc(1rem / 1.4);
     line-height: 1rem;
 }
 blockquote > footer {
+    -webkit-margin-before: .5rem;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    margin-block-start: .5rem;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding: 0;
     text-align: end;
 }
 blockquote > footer::before{
@@ -586,14 +597,7 @@ blockquote blockquote::after {
     content: no-close-quote;
 }
 figcaption {
-    -webkit-margin-before: .5rem;
-    -webkit-margin-after: 0;
-    -webkit-margin-start: 0;
-    -webkit-margin-end: 0;
-    margin-block-start: .5rem;
-    margin-block-end: 0;
-    margin-inline-start: 0;
-    margin-inline-end: 0;
+    margin: 0;
     padding: 0;
     text-align: center;
     font-size: calc(1rem / 1.4);
