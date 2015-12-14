@@ -609,15 +609,19 @@ p + p {
     text-indent: 2em;
 }
 blockquote > p::before {
-    display: inline-block;
-    -webkit-margin-start: -1rem;
-    -webkit-margin-end: 0;
-    margin-inline-start: -1rem;
-    margin-inline-end: 0;
+    display: block;
+    float: left;
+    float: inline-start;
+    margin: 0;
+    padding: 0;
     -webkit-logical-width: 1rem;
     inline-size: 1rem;
     text-align: end;
     content: open-quote;
+}
+blockquote > p + p::before {
+    -webkit-logical-width: 3rem;
+    inline-size: 3rem;
 }
 blockquote > p::after {
     content: no-close-quote;
