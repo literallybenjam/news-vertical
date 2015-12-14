@@ -94,16 +94,17 @@
     position: absolute;
     offset-inline-start: 0;
     offset-inline-end: 0;
-    -webkit-margin-before: .7rem;
-    -webkit-margin-after: .7rem;
-    -webkit-margin-start: 0;
-    -webkit-margin-end: 0;
-    margin-block-start: .7rem;
-    margin-block-end: .7rem;
-    margin-inline-start: 0;
-    margin-inline-end: 0;
+    -webkit-margin-before: .7
+    -webkit-padding-before: .7rem;
+    -webkit-padding-after: .7rem;
+    -webkit-padding-start: 0;
+    -webkit-padding-end: 0;
+    padding-block-start: .7rem;
+    padding-block-end: .7rem;
+    padding-inline-start: 0;
+    padding-inline-end: 0;
     border: none;
-    padding: 0;
+    margin: 0;
     font-family: inherit;
     font-size: calc(1rem / 1.4);
     font-weight: 200;
