@@ -74,6 +74,12 @@ Use both to justify text.
 The `<u>` element should be used to mark up chinese (or similar) proper names.
 The optional class `title` should be set when marking up titles of works, and will produce a wavy underline.
 
+###  verse  ###
+
+Use `class="verse"` on a `<p>` element to denote a stanza of verse.
+Line breaks are preserved in verse elements, although white-space is still collapsed (use non-breaking spaces or other mechanisms to circumvent this).
+Wrapped lines should also feature a hanging indent, but no browser currently supports this.
+
 ###  footnotes  ###
 
 Use `class="footnote"` to denote text with a footnote.
