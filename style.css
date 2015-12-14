@@ -311,9 +311,6 @@ figure, iframe, svg, audio, video, img {
 figure > figure, figure > iframe, figure > svg, figure > audio, figure > video, figure > img {
     margin: 0;
 }
-figcaption {
-    text-align: center;
-}
 img.inline, svg.inline {
     display: inline-block;
     margin: 0;
@@ -568,6 +565,11 @@ blockquote blockquote, figure blockquote {
     -webkit-margin-after: 0;
     margin-block-start: 0;
     margin-block-end: 0;
+}
+figcaption {
+    text-align: center;
+    font-size: calc(1rem / 1.4);
+    line-height: 1rem;
 }
 hr {
     margin: 0;
