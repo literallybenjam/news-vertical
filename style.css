@@ -614,7 +614,7 @@ p {
 p + p {
     text-indent: 2em;
 }
-blockquote > p::before {
+blockquote > p:not(:empty)::before {
     display: inline-block;
     -webkit-margin-start: -1rem;
     -webkit-margin-end: 0;
@@ -627,10 +627,10 @@ blockquote > p::before {
     text-indent: 0;
     content: open-quote;
 }
-blockquote > p::after {
+blockquote > p:not(:empty)::after {
     content: no-close-quote;
 }
-blockquote > p:last-of-type::after {
+blockquote > p:not(:empty):last-of-type::after {
     content: close-quote;
 }
 pre {
