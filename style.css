@@ -277,6 +277,8 @@ aside {
     margin-inline-end: 1rem;
     border-inline-start: .25rem currentColor double;
     padding-inline-start: .75rem;
+    font-size: calc(1rem / 1.4);
+    line-height: 1rem;
     font-weight: 200;
 }
 footer {
