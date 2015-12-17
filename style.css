@@ -706,8 +706,8 @@ del {
     text-decoration-style: double;
 }
 dfn {
-    text-decoration: underline;
-    text-decoration-style: dashed;
+    font-variant: small-caps;
+    font-weight: bolder;
 }
 em {
     text-decoration: underline;
