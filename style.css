@@ -303,6 +303,35 @@ blockquote > footer::before{
     content: "– ";
 }
 
+/*  Tables  */
+
+table {
+    -webkit-margin-before: .7em;
+    -webkit-margin-after: .7em;
+    -webkit-margin-start: auto;
+    -webkit-margin-end: auto;
+    margin-block-start: .7em;
+    margin-block-end: .7em;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    padding: 0;
+    font-size: calc(1rem / 1.4);
+    -webkit-logical-width: 100%;
+    inline-size: 100%;
+    border-collapse: collapse;
+    overflow: auto;
+}
+
+th {
+    font-weight: 600;
+}
+
+th, td {
+    margin: 0;
+    border: thin black solid;
+    padding: .7em .5em;
+}
+
 /*  Figures and Embeds  */
 
 figure {
