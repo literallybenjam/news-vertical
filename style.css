@@ -335,8 +335,8 @@ audio, iframe, img, svg, video {
     max-inline-size: 100%;
 }
 audio + audio, img + img {
-    -webkit-margin-before: 0;
-    margin-block-start: 0;
+    -webkit-margin-before: -.7em;
+    margin-block-start: -.7em;
 }
 img.text, svg.text {
     display: inline-block;
