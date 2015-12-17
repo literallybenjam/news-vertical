@@ -323,10 +323,6 @@ table {
     text-align: start;
 }
 
-col + col {
-    border-left: medium currentColor double;
-}
-
 thead {
     border-bottom: medium currentColor double;
     text-align: center;
