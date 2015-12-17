@@ -321,6 +321,11 @@ figure {
     -webkit-max-logical-width: 100%;
     max-inline-size: 100%;
 }
+figure::after {
+    display: block;
+    clear: both;
+    content: "";
+}
 audio, iframe, img, svg, video {
     display: block;
     -webkit-margin-before: .7em;
@@ -606,6 +611,11 @@ figcaption {
     text-align: center;
     font-size: calc(1rem / 1.4);
     line-height: 1rem;
+}
+figcaption::before, figcaption::after {
+    display: block;
+    clear: both;
+    content: "";
 }
 hr {
     margin: 0;
