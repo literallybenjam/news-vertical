@@ -324,11 +324,16 @@ table {
 }
 
 thead {
-    border-bottom: thin currentColor double;
+    border-bottom: medium currentColor double;
     text-align: center;
 }
 
+tbody + tbody {
+    border-top: medium currentColor double;
+}
+
 tfoot {
+    border-top: medium currentColor double;
     font-weight: 200;
 }
 
@@ -339,7 +344,7 @@ th {
 th, td {
     margin: 0;
     border: thin currentColor solid;
-    padding: .7em .5em;
+    padding: .35em .5em;
 }
 
 /*  Figures and Embeds  */
