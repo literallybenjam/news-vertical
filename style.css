@@ -334,6 +334,10 @@ audio, iframe, img, svg, video {
     -webkit-max-logical-width: 100%;
     max-inline-size: 100%;
 }
+audio + audio, img + img {
+    -webkit-margin-before: 0;
+    margin-block-start: 0;
+}
 img.text, svg.text {
     display: inline-block;
     margin: 0;
