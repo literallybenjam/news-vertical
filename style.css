@@ -323,14 +323,22 @@ table {
     text-align: start;
 }
 
+thead {
+    border-bottom: thin currentColor double;
+    text-align: center;
+}
+
+tfoot {
+    font-weight: 200;
+}
+
 th {
     font-weight: 600;
-    text-align: center;
 }
 
 th, td {
     margin: 0;
-    border: thin black solid;
+    border: thin currentColor solid;
     padding: .7em .5em;
 }
 
