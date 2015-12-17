@@ -370,7 +370,7 @@ figure::after {
     clear: both;
     content: "";
 }
-audio, iframe, img, svg, video {
+audio, iframe, img, svg, video, div.fb-post {
     display: block;
     -webkit-margin-before: .7em;
     -webkit-margin-after: .7em;
@@ -386,6 +386,9 @@ audio, iframe, img, svg, video {
 audio + audio, img + img {
     -webkit-margin-before: -.7em;
     margin-block-start: -.7em;
+}
+div.fb-post iframe {
+    margin: 0;
 }
 img.text, svg.text {
     display: inline-block;
