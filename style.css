@@ -320,10 +320,12 @@ table {
     inline-size: 100%;
     border-collapse: collapse;
     overflow: auto;
+    text-align: start;
 }
 
 th {
     font-weight: 600;
+    text-align: center;
 }
 
 th, td {
