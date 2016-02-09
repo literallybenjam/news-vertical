@@ -185,6 +185,9 @@ html.horizontal body > header, body.horizontal > header {
     left: 2rem;
     text-align: start;
 }
+html.horizontal:not(.vertical) body > header, body.horizontal:not(.vertical) body > header {
+    max-width: calc(100% - 4rem);
+}
 body > header ~ aside {
     -webkit-writing-mode: horizontal-tb;
     -ms-writing-mode: horizontal-tb;
@@ -211,6 +214,9 @@ html.horizontal body > header ~ aside, body.horizontal > header ~ aside {
     right: auto;
     left: 2rem;
     text-align: start;
+}
+html.horizontal:not(.vertical) body > header ~ aside, body.horizontal:not(.vertical) body > header ~ aside {
+    max-width: calc(100% - 4rem);
 }
 body > header ~ footer {
     -webkit-writing-mode: horizontal-tb;
