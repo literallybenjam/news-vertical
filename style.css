@@ -757,7 +757,11 @@ a:active {
     background: rgba(245,245,245,1);
 }
 body > header a, body > header ~ aside a {
+    color: inherit;
+    outline: none;
+    background: none;
     font-weight: inherit;
+    transition: none;
 }
 b {
     font-weight: 600;
