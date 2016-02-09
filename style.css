@@ -738,23 +738,26 @@ pre {
 
 /*  Phrasing Content  */
 
-main a {
+a {
     color: #0c0c0c;
     outline-style: outset;
     outline-width: 1px;
     outline-color: rgba(28,28,28,0);
     background: rgba(245,245,245,0);
-    font-weight: 400;
+    font-weight: bolder;
     transition: outline-color .5s, background .5s;
 }
-main a:hover{
+a:hover {
     outline-color: rgba(28,28,28,.6);
     background: rgba(245,245,245,1);
 }
-main a:active{
+a:active {
     outline-style: inset;
     outline-color: rgba(28,28,28,.6);
     background: rgba(245,245,245,1);
+}
+body > header a, body > header ~ aside a {
+    font-weight: inherit;
 }
 b {
     font-weight: 600;
