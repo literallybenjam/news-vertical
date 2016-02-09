@@ -237,12 +237,16 @@ body > header ~ footer {
     font-size: calc(1rem / 1.4);
     line-height: 1rem;
     white-space: nowrap;
+    overflow: auto;
     text-align: start;
 }
 html.horizontal body > header ~ footer, body.horizontal > header ~ footer {
     left: auto;
     right: 2rem;
     text-align: end;
+}
+html.horizontal:not(.vertical) body > header ~ footer, body.horizontal:not(.vertical) body > header ~ footer {
+    max-width: calc(100% - 4rem);
 }
 body > header ~ main {
     display: block;
