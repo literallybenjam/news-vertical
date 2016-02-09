@@ -172,9 +172,12 @@ body > header {
     font-size: calc(3rem / 1.4);
     line-height: 3rem;
     white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
     text-align: end;
 }
-body > header h1 {
+body > header * {
+    display: inline;
     font-size: inherit;
     line-height: inherit;
     margin: 0;
@@ -208,6 +211,8 @@ body > header ~ aside {
     font-size: calc(1rem / 1.4);
     line-height: 1rem;
     white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
     text-align: end;
 }
 html.horizontal body > header ~ aside, body.horizontal > header ~ aside {
