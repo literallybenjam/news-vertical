@@ -296,6 +296,18 @@ aside {
     line-height: 1rem;
     font-weight: 200;
 }
+nav {
+    display: block;
+    -webkit-margin-before: 2.8rem;
+    -webkit-margin-after: 1.4rem;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    margin-block-start: 2.8rem;
+    margin-block-end: 1.4rem;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    font-weight: 200;
+}
 footer {
     margin: 0;
     padding: 0;
