@@ -136,7 +136,7 @@ html[data-news-features~="footnotes"] *.footnote::after {
     font-size: calc(1rem / 1.4);
     line-height: 1rem;
     vertical-align: super;
-    content: attr(data-news-counter-footnotes);
+    content: attr(data-news-counter-footnote);
 }
 @supports (font-variant-position: super) {
     html[data-news-features~="footnotes"] *.footnote::after {
@@ -180,7 +180,7 @@ html[data-news-features~="footer"] > body > footer#news-footnotes > * {
     padding: 0;
 }
 html[data-news-features~="footer"] > body > footer#news-footnotes > *::before {
-    content: attr(data-news-counter-footnotes) ". ";
+    content: attr(data-news-counter-footnote) ". ";
     font-weight: 300;
 }
 
