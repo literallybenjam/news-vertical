@@ -149,7 +149,7 @@ html[data-news-features~="footnotes"] *.footnote::after {
 html[data-news-features~="footnotes"] *.footnote *.note {
     display: none;
 }
-html[data-news-features~="footer"] > body > footer#news-footnotes {
+html[data-news-features~="footnotes"] > body > footer#news-footnotes {
     display: block;
     -webkit-writing-mode: horizontal-tb;
     -ms-writing-mode: horizontal-tb;
@@ -170,16 +170,16 @@ html[data-news-features~="footer"] > body > footer#news-footnotes {
     overflow: auto;
     transition: opacity .5s, visibility .5s, height .5s;
 }
-html[data-news-features~="footer"] > body > footer#news-footnotes:empty {
+html[data-news-features~="footnotes"] > body > footer#news-footnotes:empty {
     opacity: 0;
     visibility: hidden;
 }
-html[data-news-features~="footer"] > body > footer#news-footnotes > * {
+html[data-news-features~="footnotes"] > body > footer#news-footnotes > * {
     display: block;
     margin: 0;
     padding: 0;
 }
-html[data-news-features~="footer"] > body > footer#news-footnotes > *::before {
+html[data-news-features~="footnotes"] > body > footer#news-footnotes > *::before {
     content: attr(data-news-counter-footnote) ". ";
     font-weight: 300;
 }
@@ -283,7 +283,7 @@ html.horizontal body > header ~ aside, body.horizontal > header ~ aside {
 html.horizontal:not(.vertical) body > header ~ aside, body.horizontal:not(.vertical) body > header ~ aside {
     max-width: calc(100% - 4rem);
 }
-body > header ~ footer:not(#news-footer) {
+body > header ~ footer:not(#news-footnotes) {
     -webkit-writing-mode: horizontal-tb;
     -ms-writing-mode: horizontal-tb;
     writing-mode: horizontal-tb;
@@ -300,12 +300,12 @@ body > header ~ footer:not(#news-footer) {
     overflow: auto;
     text-align: start;
 }
-html.horizontal body > header ~ footer:not(#news-footer), body.horizontal > header ~ footer:not(#news-footer) {
+html.horizontal body > header ~ footer:not(#news-footnotes), body.horizontal > header ~ footer:not(#news-footnotes) {
     left: auto;
     right: 2rem;
     text-align: end;
 }
-html.horizontal:not(.vertical) body > header ~ footer:not(#news-footer), body.horizontal:not(.vertical) body > header ~ footer:not(#news-footer) {
+html.horizontal:not(.vertical) body > header ~ footer:not(#news-footnotes), body.horizontal:not(.vertical) body > header ~ footer:not(#news-footnotes) {
     max-width: calc(100% - 4rem);
 }
 body > header ~ main {
