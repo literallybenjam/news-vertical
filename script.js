@@ -24,14 +24,15 @@ News.initFootnotes = function() {
     document.body.appendChild(document.createElement("footer")).id = "news-footnotes";
     for (let i = 0; i < News.footnotes.length; i++) {
         if (i < 10) {
-            News.footnotes.item(i).setAttribute("data-news-counter-footnote", "0" + i);
-            News.footnotes.item(i).getElementsByClassName("note").item(0).setAttribute("data-news-counter-footnote", "0" + i);
+            News.footnotes.item(i).setAttribute("data-news-counter-footnote", "0" + (i+1));
+            News.footnotes.item(i).getElementsByClassName("note").item(0).setAttribute("data-news-counter-footnote", "0" + (i+1));
         }
         else {
-            News.footnotes.item(i).setAttribute("data-news-counter-footnote", i);
-            News.footnotes.item(i).getElementsByClassName("note").item(0).setAttribute("data-news-counter-footnote", i);
+            News.footnotes.item(i).setAttribute("data-news-counter-footnote", (i+1));
+            News.footnotes.item(i).getElementsByClassName("note").item(0).setAttribute("data-news-counter-footnote", (i+1));
         }
     }
+    News.processScroll();
 }
 
 News.processScroll = function(e) {
