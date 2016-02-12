@@ -14,7 +14,7 @@
 *:root:root:root:root:root:root:root:root:root:root *[hidden] {
     display: none;
 }
-*[title]:not([title=""]):not(a), *.footnote {
+*[title]:not([title=""]):not(a) {
     cursor: help;
     text-decoration-line: underline;
     text-decoration-style: dotted;
@@ -88,7 +88,15 @@
 *.inline {
     display: inline;
 }
-*.footnote *.note {
+
+/*  Footnotes  */
+
+html:not([data-features~="footnotes"]) *.footnote {
+    cursor: help;
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+}
+html:not([data-features~="footnotes"]) *.footnote *.note {
     cursor: auto;
     display: block;
     position: absolute;
@@ -119,9 +127,56 @@
     visibility: hidden;
     transition: opacity .5s, visibility .5s;
 }
-*.footnote:hover *.note {
+html:not([data-features~="footnotes"]) *.footnote:hover *.note {
     opacity: 1;
     visibility: visible;
+}
+html[data-features~="footnotes"] *.footnote::after {
+    content: attr(data-news-counter-footnotes);
+    vertical-align: super;
+}
+@supports (font-variant-position: super) {
+    html[data-features~="footnotes"] *.footnote::after {
+        font-variant-position: super;
+        vertical-align: baseline;
+    }
+}
+html[data-features~="footnotes"] *.footnote *.note {
+    display: none;
+}
+html[data-news-features~="footer"] > body > footer#news-footnotes {
+    display: block;
+    -webkit-writing-mode: horizontal-tb;
+    -ms-writing-mode: horizontal-tb;
+    writing-mode: horizontal-tb;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    border-top: thin #828282 solid;
+    padding: 1.4rem 2rem;
+    max-height: 5rem;
+    font-size: calc(1rem / 1.4);
+    line-height: 1rem;
+    font-weight: 200;
+    opacity: 1;
+    visibility: visible;
+    overflow: auto;
+    transition: opacity .5s, visibility .5s, height .5s;
+}
+html[data-news-features~="footer"] > body > footer#news-footnotes:empty {
+    opacity: 0;
+    visibility: hidden;
+}
+html[data-news-features~="footer"] > body > footer#news-footnotes > * {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+html[data-news-features~="footer"] > body > footer#news-footnotes > *::before {
+    content: attr(data-news-counter-footnotes) ". ";
+    font-weight: 300;
 }
 
 /*  Page Layout  */
@@ -223,7 +278,7 @@ html.horizontal body > header ~ aside, body.horizontal > header ~ aside {
 html.horizontal:not(.vertical) body > header ~ aside, body.horizontal:not(.vertical) body > header ~ aside {
     max-width: calc(100% - 4rem);
 }
-body > header ~ footer {
+body > header ~ footer:not(#news-footer) {
     -webkit-writing-mode: horizontal-tb;
     -ms-writing-mode: horizontal-tb;
     writing-mode: horizontal-tb;
@@ -240,12 +295,12 @@ body > header ~ footer {
     overflow: auto;
     text-align: start;
 }
-html.horizontal body > header ~ footer, body.horizontal > header ~ footer {
+html.horizontal body > header ~ footer:not(#news-footer), body.horizontal > header ~ footer:not(#news-footer) {
     left: auto;
     right: 2rem;
     text-align: end;
 }
-html.horizontal:not(.vertical) body > header ~ footer, body.horizontal:not(.vertical) body > header ~ footer {
+html.horizontal:not(.vertical) body > header ~ footer:not(#news-footer), body.horizontal:not(.vertical) body > header ~ footer:not(#news-footer) {
     max-width: calc(100% - 4rem);
 }
 body > header ~ main {

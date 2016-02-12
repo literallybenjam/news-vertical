@@ -102,6 +102,14 @@ A sample bibliography markup is as follows:
 </ul>
 ```
 
+###  `script.js`  ###
+
+NEWS-VERTICAL doesn't require JavaScript to operate, but including `script.js` can provide enhanced rendering for some elements (for example, footnotes).
+To use `script.js`; simply include the file in your document (using `<script src="script.js"></script>` or similar) and run `News.init(features)`, where `features` is an array of the desired features you wish to activate.
+The features currently supported by `script.js` are:
+
+- `"footnotes"` : provides enhanced footnote rendering support
+
 ##  Considerations:  ##
 
 NEWS-VERTICAL makes fair use of such features as `margin-block-start` to style content (for example, headings) regardless of `writing-mode` or `direction`.
