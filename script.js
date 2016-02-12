@@ -11,7 +11,7 @@ var News = {
 News.init = function(features) {
     if (!Array.isArray(features)) features = [features];
     for (let feature in News.features) {
-        if (features.indexOf("footnotes") !== -1) News.features[feature] = true;
+        if (features.indexOf(feature) !== -1) News.features[feature] = true;
         else News.features[feature] = false;
     }
     if (News.features.footnotes) document.addEventListener("load", News.initFootnotes, false);
@@ -21,8 +21,8 @@ News.init = function(features) {
 
 News.initFootnotes = function() {
     if (!News.features.footnotes) return;
+    document.body.appendChild(document.createElement("footer")).id = "news-footnotes";
     for (let i = 0; i < News.footnotes.length; i++) {
-        document.body.appendChild(document.createElement("footer")).id = "news-footnotes";
         if (i < 10) {
             News.footnotes.item(i).setAttribute("data-news-counter-footnote", "0" + i);
             News.footnotes.item(i).getElementsByClassName("note").item(0).setAttribute("data-news-counter-footnote", "0" + i);
