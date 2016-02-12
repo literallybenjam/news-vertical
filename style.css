@@ -161,8 +161,7 @@ html[data-news-features~="footnotes"] > body > footer#news-footnotes {
     margin: 0;
     border-top: thin #828282 solid;
     padding: 1rem;
-    height: auto;
-    max-height: 5rem;
+    height: 5rem;
     font-weight: 200;
     font-size: calc(1rem / 1.4);
     line-height: 1rem;
@@ -183,7 +182,7 @@ html[data-news-features~="footnotes"] > body > footer#news-footnotes:empty {
 }
 html[data-news-features~="footnotes"] > body > footer#news-footnotes > * {
     display: block;
-    margin: auto;
+    margin: 0 auto 1rem;
     padding: 0;
     max-width: 28rem;
 }
