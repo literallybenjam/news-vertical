@@ -14,7 +14,7 @@ News.init = function(features) {
         if (features.indexOf(feature) !== -1) News.features[feature] = true;
         else News.features[feature] = false;
     }
-    if (News.features.footnotes) document.addEventListener("load", News.initFootnotes, false);
+    if (News.features.footnotes) window.addEventListener("load", News.initFootnotes, false);
     if (News.features.footnotes) window.addEventListener("scroll", News.processScroll, false);
     document.documentElement.setAttribute("data-news-features", features.join(" "));
 }
