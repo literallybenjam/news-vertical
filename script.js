@@ -38,11 +38,11 @@ News.processScroll = function(e) {
     if (News.features.footnotes) {
         for (let footnote of News.footnotes) {
             if (footnote.getBoundingClientRect().bottom < 0 || footnote.getBoundingClientRect().top > window.innerHeight) {
-                let note = document.getElementById("news-footnotes").querySelector("*[data-news-counter-footnote=" + footnote.getAttribute("data-news-counter-footnote") +"]");
+                let note = document.getElementById("news-footnotes").querySelector('*[data-news-counter-footnote="' + footnote.getAttribute("data-news-counter-footnote") +'"]');
                 if (note) note.parentElement.removeChild(note);
             }
             else {
-                let note = document.getElementById("news-footnotes").querySelector("*[data-news-counter-footnote=" + footnote.getAttribute("data-news-counter-footnote") +"]");
+                let note = document.getElementById("news-footnotes").querySelector('*[data-news-counter-footnote="' + footnote.getAttribute("data-news-counter-footnote") +'"]');
                 let firstnote = document.getElementById("news-footnotes").querySelector("*[data-news-counter-footnote]");
                 if (!note && firstnote && Number(footnote.getAttribute("data-news-counter-footnote")) < Number(firstnote.getAttribute("data-news-counter-footnote"))) document.getElementById("news-footnotes").insertBefore(footnote.getElementsByClassName("note").item(0).cloneNode(true), firstnote);
                 else if (!note) document.getElementById("news-footnotes").appendChild(footnote.getElementsByClassName("note").item(0).cloneNode(true));

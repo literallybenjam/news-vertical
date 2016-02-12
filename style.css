@@ -132,11 +132,16 @@ html:not([data-news-features~="footnotes"]) *.footnote:hover *.note {
     visibility: visible;
 }
 html[data-news-features~="footnotes"] *.footnote::after {
-    content: attr(data-news-counter-footnotes);
+    display: inline-block;
+    font-size: calc(1rem / 1.4);
+    line-height: 1rem;
     vertical-align: super;
+    content: attr(data-news-counter-footnotes);
 }
 @supports (font-variant-position: super) {
-    html[data-features~="footnotes"] *.footnote::after {
+    html[data-news-features~="footnotes"] *.footnote::after {
+        display: inline;
+        font-size: inherit;
         font-variant-position: super;
         vertical-align: baseline;
     }
