@@ -91,12 +91,12 @@
 
 /*  Footnotes  */
 
-html:not([data-features~="footnotes"]) *.footnote {
+html:not([data-news-features~="footnotes"]) *.footnote {
     cursor: help;
     text-decoration-line: underline;
     text-decoration-style: dotted;
 }
-html:not([data-features~="footnotes"]) *.footnote *.note {
+html:not([data-news-features~="footnotes"]) *.footnote *.note {
     cursor: auto;
     display: block;
     position: absolute;
@@ -127,11 +127,11 @@ html:not([data-features~="footnotes"]) *.footnote *.note {
     visibility: hidden;
     transition: opacity .5s, visibility .5s;
 }
-html:not([data-features~="footnotes"]) *.footnote:hover *.note {
+html:not([data-news-features~="footnotes"]) *.footnote:hover *.note {
     opacity: 1;
     visibility: visible;
 }
-html[data-features~="footnotes"] *.footnote::after {
+html[data-news-features~="footnotes"] *.footnote::after {
     content: attr(data-news-counter-footnotes);
     vertical-align: super;
 }
@@ -141,7 +141,7 @@ html[data-features~="footnotes"] *.footnote::after {
         vertical-align: baseline;
     }
 }
-html[data-features~="footnotes"] *.footnote *.note {
+html[data-news-features~="footnotes"] *.footnote *.note {
     display: none;
 }
 html[data-news-features~="footer"] > body > footer#news-footnotes {
