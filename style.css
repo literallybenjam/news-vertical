@@ -818,6 +818,11 @@ blockquote > p:not(:empty)::after {
 blockquote > p:not(:empty):last-of-type::after {
     content: close-quote;
 }
+header > p + p {
+    text-indent: 0;
+    -webkit-margin-before: .7em;
+    margin-block-start: .7em;
+}
 p.verse {
     white-space: pre-line;
     text-indent: 0;
