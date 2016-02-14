@@ -231,6 +231,7 @@ body > header {
     -ms-writing-mode: horizontal-tb;
     writing-mode: horizontal-tb;
     position: absolute;
+    margin: 0;
     top: 1.4rem;
     right: 2rem;
     padding: 0;
@@ -326,6 +327,17 @@ body > header ~ main {
 main {
     position: relative;
 }
+header {
+    -webkit-margin-before: 1.4rem;
+    -webkit-margin-after: 1.4rem;
+    -webkit-margin-start: 1rem;
+    -webkit-margin-end: 1rem;
+    margin-block-start: 1.4rem;
+    margin-block-end: 1.4rem;
+    margin-inline-start: 1rem;
+    margin-inline-end: 1rem;
+    text-align: center;
+}
 section {
     display: block;
     -webkit-margin-before: 2.8rem;
@@ -365,11 +377,11 @@ aside {
 }
 nav {
     display: block;
-    -webkit-margin-before: 2.8rem;
+    -webkit-margin-before: 1.4rem;
     -webkit-margin-after: 1.4rem;
     -webkit-margin-start: 0;
     -webkit-margin-end: 0;
-    margin-block-start: 2.8rem;
+    margin-block-start: 1.4rem;
     margin-block-end: 1.4rem;
     margin-inline-start: 0;
     margin-inline-end: 0;
