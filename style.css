@@ -431,14 +431,19 @@ tfoot {
     font-weight: 200;
 }
 
-th {
-    font-weight: 600;
-}
-
 th, td {
     margin: 0;
     border: thin currentColor solid;
     padding: .35em .5em;
+}
+
+th {
+    font-weight: 600;
+    vertical-align: bottom;
+}
+
+td {
+    vertical-align: top;
 }
 
 /*  Figures and Embeds  */
