@@ -230,6 +230,7 @@ html[data-news-features~="footnotes"] > body > footer#news-footnotes:not(:empty)
     }
 }
 *.news-metadata {
+    display: block;
     position: absolute;
     left: 0;
     right: 0;
