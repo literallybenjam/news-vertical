@@ -62,7 +62,7 @@ News.initMetadata = function() {
         if (element.hasAttribute("data-news-metadata-facebook")) element.insertAdjacentHTML('afterend', '<a href="https://www.facebook.com/' + element.getAttribute("data-news-metadata-facebook") + '" target="_blank">' + News.metadata_logos.facebook + '</a>');
         if (element.hasAttribute("data-news-metadata-twitter")) {
             if (element.getAttribute("data-news-metadata-twitter")[0] === "@") element.setAttribute("data-news-metadata-twitter", element.getAttribute("data-news-metadata-twitter").substr(1));
-            element.insertAdjacentHTML('afterend', '<a href="https://twitter.com/' + element.getAttribute("data-news-metadata-twitter") + '" target="_blank">' + News.metadata_logos.facebook + '</a>');
+            element.insertAdjacentHTML('afterend', '<a href="https://twitter.com/' + element.getAttribute("data-news-metadata-twitter") + '" target="_blank">' + News.metadata_logos.twitter + '</a>');
         }
         if (element.hasAttribute("data-news-metadata-url")) element.insertAdjacentHTML('afterend', '<a href="' + element.getAttribute("data-news-metadata-url") + '" target="_blank">🔗</a>');
         element.insertAdjacentHTML('afterend', ' ');
