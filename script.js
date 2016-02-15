@@ -22,6 +22,7 @@ News.init = function(features) {
 News.initFootnotes = function() {
     if (!News.features.footnotes) return;
     document.body.appendChild(document.createElement("footer")).id = "news-footnotes";
+    document.body.appendChild(document.createElement("div")).id = "news-footnotes-padding";
     for (let i = 0; i < News.footnotes.length; i++) {
         if (i < 10) {
             News.footnotes.item(i).setAttribute("data-news-counter-footnote", "0" + (i+1));
