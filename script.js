@@ -56,9 +56,10 @@ News.initMetadata = function() {
     var elements = News.getMetadataElements();
     var i;
     var element;
-    var metadata = document.createElement("small");
+    var metadata;
     for (i = 0; i < elements.length; i++) {
         element = elements.item(i);
+        metadata = document.createElement("small");
         if (element.hasAttribute("data-news-metadata-processed")) continue;
         metadata.appendChild(document.createTextNode('['));
         if (element.hasAttribute("data-news-metadata-url")) metadata.insertAdjacentHTML('afterend', '<a href="' + element.getAttribute("data-news-metadata-url") + '" title="website" target="_blank">🔗</a>');
