@@ -56,16 +56,20 @@ News.initMetadata = function() {
     var elements = News.getMetadataElements();
     var i;
     var element;
+    var metadata = document.createElement("small");
     for (i = 0; i < elements.length; i++) {
         element = elements.item(i);
         if (element.hasAttribute("data-news-metadata-processed")) continue;
-        if (element.hasAttribute("data-news-metadata-facebook")) element.insertAdjacentHTML('afterend', '<a href="https://www.facebook.com/' + element.getAttribute("data-news-metadata-facebook") + '" target="_blank">' + News.metadata_logos.facebook + '</a>');
+        metadata.appendChild(document.createTextNode('['));
+        if (element.hasAttribute("data-news-metadata-url")) metadata.insertAdjacentHTML('afterend', '<a href="' + element.getAttribute("data-news-metadata-url") + '" title="website" target="_blank">🔗</a>');
         if (element.hasAttribute("data-news-metadata-twitter")) {
             if (element.getAttribute("data-news-metadata-twitter")[0] === "@") element.setAttribute("data-news-metadata-twitter", element.getAttribute("data-news-metadata-twitter").substr(1));
-            element.insertAdjacentHTML('afterend', '<a href="https://twitter.com/' + element.getAttribute("data-news-metadata-twitter") + '" target="_blank">' + News.metadata_logos.twitter + '</a>');
+            metadata.insertAdjacentHTML('afterbegin', '<a href="https://twitter.com/' + element.getAttribute("data-news-metadata-twitter") + '" title="twitter" target="_blank">' + News.metadata_logos.twitter + '</a>');
         }
-        if (element.hasAttribute("data-news-metadata-url")) element.insertAdjacentHTML('afterend', '<a href="' + element.getAttribute("data-news-metadata-url") + '" target="_blank">🔗</a>');
-        element.insertAdjacentHTML('afterend', ' ');
+        if (element.hasAttribute("data-news-metadata-facebook")) metadata.insertAdjacentHTML('afterend', '<a href="https://www.facebook.com/' + element.getAttribute("data-news-metadata-facebook") + '" title="facebook" target="_blank">' + News.metadata_logos.facebook + '</a>');
+        metadata.appendChild(document.createTextNode(']'));
+        element.parentElement.insertBefore(metadata, element.nextSibling);
+        element.parentElement.insertBefore(document.createTextNode(' '), metadata);
         element.setAttribute("data-news-metadata-processed", "");
     }
 }
