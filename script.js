@@ -34,6 +34,7 @@ News.init = function(features) {
     if (News.features.footnotes) window.addEventListener("load", News.initFootnotes, false);
     if (News.features.footnotes) window.addEventListener("scroll", News.processScroll, false);
     if (News.features.metadata) window.addEventListener("load", News.initMetadata, false);
+    if (News.features.metadata) window.addEventListener("touchstart", News.processTouch, false);
     document.documentElement.setAttribute("data-news-features", features.join(" "));
 }
 
