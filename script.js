@@ -1,10 +1,11 @@
 /* jslint asi:true, browser:true, esnext:true */
 
 var News = {
-    init: undefined,
     features: {footnotes: false},
     footnotes: document.documentElement.getElementsByClassName("footnote"),
+    init: undefined,
     initFootnotes: undefined,
+    is_initialized: {footnotes: false},
     processScroll: undefined
 }
 
@@ -33,11 +34,12 @@ News.initFootnotes = function() {
             News.footnotes.item(i).getElementsByClassName("note").item(0).setAttribute("data-news-counter-footnote", (i+1));
         }
     }
+    News.is_initialized.footnotes = true;
     News.processScroll();
 }
 
 News.processScroll = function(e) {
-    if (News.features.footnotes) {
+    if (News.features.footnotes && News.is_initialized.footnotes) {
         for (let footnote of News.footnotes) {
             if (footnote.getBoundingClientRect().bottom < 0 || footnote.getBoundingClientRect().top > window.innerHeight) {
                 let note = document.getElementById("news-footnotes").querySelector('*[data-news-counter-footnote="' + footnote.getAttribute("data-news-counter-footnote") +'"]');
