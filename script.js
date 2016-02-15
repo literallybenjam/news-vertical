@@ -45,7 +45,8 @@ News.processScroll = function(e) {
         var footnote;
         var note;
         var firstnote;
-        for (footnote of News.footnotes) {
+        var i;
+        for (i = 0; i < News.footnotes.length; footnote = News.footnotes.item(i++)) {
             if (footnote.getBoundingClientRect().bottom < 0 || footnote.getBoundingClientRect().top > window.innerHeight) {
                 note = document.getElementById("news-footnotes").querySelector('*[data-news-counter-footnote="' + footnote.getAttribute("data-news-counter-footnote") +'"]');
                 if (note) note.parentElement.removeChild(note);
