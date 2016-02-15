@@ -19,6 +19,12 @@
     text-decoration-line: underline;
     text-decoration-style: dotted;
 }
+@supports not (text-decoration-style: dotted) {
+    *[title]:not([title=""]):not(a) {
+        text-decoration: none;
+        border-bottom: thin currentColor dotted;
+    }
+}
 *.vertical {
     -webkit-writing-mode: vertical-rl;
     -ms-writing-mode: vertical-rl;
@@ -95,6 +101,12 @@ html:not([data-news-features~="footnotes"]) *.footnote {
     cursor: help;
     text-decoration-line: underline;
     text-decoration-style: dotted;
+}
+@supports not (text-decoration-style: dotted) {
+    html:not([data-news-features~="footnotes"]) *.footnote {
+        text-decoration: none;
+        border-bottom: thin currentColor dotted;
+    }
 }
 html:not([data-news-features~="footnotes"]) *.footnote *.note {
     cursor: auto;
@@ -211,7 +223,12 @@ html[data-news-features~="footnotes"] > body > footer#news-footnotes:not(:empty)
     text-decoration-style: dashed;
     cursor: help;
 }
-
+@supports not (text-decoration-style: dashed) {
+    *.news-metadata-processed {
+        text-decoration: none;
+        border-bottom: thin currentColor dashed;
+    }
+}
 *.news-metadata {
     position: absolute;
     left: 0;
@@ -242,7 +259,6 @@ html[data-news-features~="footnotes"] > body > footer#news-footnotes:not(:empty)
     overflow: auto;
     transition: opacity .5s, visibility .5s;
 }
-
 *.news-metadata-processed:hover *.news-metadata {
     opacity: 1;
     visibility: visible;
@@ -486,32 +502,26 @@ table {
     overflow: auto;
     text-align: start;
 }
-
 thead {
     border-bottom: medium currentColor double;
     text-align: center;
 }
-
 tbody + tbody {
     border-top: medium currentColor double;
 }
-
 tfoot {
     border-top: medium currentColor double;
     font-weight: 200;
 }
-
 th, td {
     margin: 0;
     border: thin currentColor solid;
     padding: .35em .5em;
 }
-
 th {
     font-weight: 600;
     vertical-align: bottom;
 }
-
 td {
     vertical-align: top;
 }
