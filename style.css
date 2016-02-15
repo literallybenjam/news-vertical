@@ -237,6 +237,8 @@ html[data-news-features~="footnotes"] > body > footer#news-footnotes:not(:empty)
     line-height: 1.4rem;
     opacity: 0;
     visibility: hidden;
+    white-space: nowrap;
+    overflow: auto;
     cursor: help;
     transition: opacity .5s, visibility .5s;
 }
