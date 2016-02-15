@@ -239,7 +239,7 @@ html[data-news-features~="footnotes"] > body > footer#news-footnotes:not(:empty)
     border-radius: .4rem;
     padding: 0 .2rem;
     width: 5rem;
-    width: -webkit-max-content;
+    /* width: -webkit-max-content;  //  Webkit doesn't handle these right so just use the default */
     width: -moz-max-content;
     width: max-content;
     height: 1.4rem;
