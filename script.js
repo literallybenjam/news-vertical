@@ -64,12 +64,12 @@ News.initMetadata = function() {
         element.parentElement.insertBefore(metadata, element.nextSibling);
         if (element.hasAttribute("data-news-metadata-processed")) continue;
         metadata.appendChild(document.createTextNode('['));
-        if (element.hasAttribute("data-news-metadata-url")) metadata.insertAdjacentHTML('afterend', '<a href="' + element.getAttribute("data-news-metadata-url") + '" title="website" target="_blank">🔗</a>');
+        if (element.hasAttribute("data-news-metadata-url")) metadata.insertAdjacentHTML('beforeend', '<a href="' + element.getAttribute("data-news-metadata-url") + '" title="website" target="_blank">🔗</a>');
         if (element.hasAttribute("data-news-metadata-twitter")) {
             if (element.getAttribute("data-news-metadata-twitter")[0] === "@") element.setAttribute("data-news-metadata-twitter", element.getAttribute("data-news-metadata-twitter").substr(1));
-            metadata.insertAdjacentHTML('afterbegin', '<a href="https://twitter.com/' + element.getAttribute("data-news-metadata-twitter") + '" title="twitter" target="_blank">' + News.metadata_logos.twitter + '</a>');
+            metadata.insertAdjacentHTML('beforeend', '<a href="https://twitter.com/' + element.getAttribute("data-news-metadata-twitter") + '" title="twitter" target="_blank">' + News.metadata_logos.twitter + '</a>');
         }
-        if (element.hasAttribute("data-news-metadata-facebook")) metadata.insertAdjacentHTML('afterend', '<a href="https://www.facebook.com/' + element.getAttribute("data-news-metadata-facebook") + '" title="facebook" target="_blank">' + News.metadata_logos.facebook + '</a>');
+        if (element.hasAttribute("data-news-metadata-facebook")) metadata.insertAdjacentHTML('beforeend', '<a href="https://www.facebook.com/' + element.getAttribute("data-news-metadata-facebook") + '" title="facebook" target="_blank">' + News.metadata_logos.facebook + '</a>');
         metadata.appendChild(document.createTextNode(']'));
         element.setAttribute("data-news-metadata-processed", "");
     }
