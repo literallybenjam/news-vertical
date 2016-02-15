@@ -108,7 +108,13 @@ NEWS-VERTICAL doesn't require JavaScript to operate, but including `script.js` c
 To use `script.js`; simply include the file in your document (using `<script src="script.js"></script>` or similar) and run `News.init(features)`, where `features` is an array of the desired features you wish to activate.
 The features currently supported by `script.js` are:
 
-- `"footnotes"` : provides enhanced footnote rendering support
+- `"footnotes"` : Provides enhanced footnote rendering support.
+
+- `"metadata"` : Renders hypertextual metadata for elements, which can be specified by setting some or all of the following attributes:
+
+    - `data-news-metadata-url` : Website url
+    - `data-news-metadata-twitter` : Twitter username
+    - `data-news-metadata-facebook` : Facebook username
 
 ##  Considerations:  ##
 

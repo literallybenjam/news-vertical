@@ -526,6 +526,10 @@ iframe[src*="//youtube.com/embed/"], iframe[src*="//www.youtube.com/embed/"] {
     width: 560px;
     height: 315px;
 }
+svg {
+    color: currentColor;
+    fill: currentColor;
+}
 
 /*  Headings  */
 
