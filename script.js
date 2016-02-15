@@ -11,7 +11,8 @@ var News = {
 
 News.init = function(features) {
     if (!Array.isArray(features)) features = [features];
-    for (let feature in News.features) {
+    var feature;
+    for (feature in News.features) {
         if (features.indexOf(feature) !== -1) News.features[feature] = true;
         else News.features[feature] = false;
     }
@@ -22,9 +23,10 @@ News.init = function(features) {
 
 News.initFootnotes = function() {
     if (!News.features.footnotes) return;
+    var i;
     document.body.appendChild(document.createElement("footer")).id = "news-footnotes";
     document.body.appendChild(document.createElement("div")).id = "news-footnotes-padding";
-    for (let i = 0; i < News.footnotes.length; i++) {
+    for (i = 0; i < News.footnotes.length; i++) {
         if (i < 10) {
             News.footnotes.item(i).setAttribute("data-news-counter-footnote", "0" + (i+1));
             News.footnotes.item(i).getElementsByClassName("note").item(0).setAttribute("data-news-counter-footnote", "0" + (i+1));
@@ -40,14 +42,17 @@ News.initFootnotes = function() {
 
 News.processScroll = function(e) {
     if (News.features.footnotes && News.is_initialized.footnotes) {
-        for (let footnote of News.footnotes) {
+        var footnote;
+        var note;
+        var firstnote;
+        for (footnote of News.footnotes) {
             if (footnote.getBoundingClientRect().bottom < 0 || footnote.getBoundingClientRect().top > window.innerHeight) {
-                let note = document.getElementById("news-footnotes").querySelector('*[data-news-counter-footnote="' + footnote.getAttribute("data-news-counter-footnote") +'"]');
+                note = document.getElementById("news-footnotes").querySelector('*[data-news-counter-footnote="' + footnote.getAttribute("data-news-counter-footnote") +'"]');
                 if (note) note.parentElement.removeChild(note);
             }
             else {
-                let note = document.getElementById("news-footnotes").querySelector('*[data-news-counter-footnote="' + footnote.getAttribute("data-news-counter-footnote") +'"]');
-                let firstnote = document.getElementById("news-footnotes").querySelector("*[data-news-counter-footnote]");
+                note = document.getElementById("news-footnotes").querySelector('*[data-news-counter-footnote="' + footnote.getAttribute("data-news-counter-footnote") +'"]');
+                firstnote = document.getElementById("news-footnotes").querySelector("*[data-news-counter-footnote]");
                 if (!note && firstnote && Number(footnote.getAttribute("data-news-counter-footnote")) < Number(firstnote.getAttribute("data-news-counter-footnote"))) document.getElementById("news-footnotes").insertBefore(footnote.getElementsByClassName("note").item(0).cloneNode(true), firstnote);
                 else if (!note) document.getElementById("news-footnotes").appendChild(footnote.getElementsByClassName("note").item(0).cloneNode(true));
             }
