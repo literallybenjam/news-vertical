@@ -144,7 +144,6 @@ html:not([data-news-features~="footnotes"]) *.footnote:hover *.note {
     visibility: visible;
 }
 html[data-news-features~="footnotes"] *.footnote::after {
-    display: inline-block;
     font-size: calc(1rem / 1.4);
     line-height: 1rem;
     vertical-align: super;
