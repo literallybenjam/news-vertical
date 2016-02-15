@@ -60,6 +60,8 @@ News.initMetadata = function() {
     for (i = 0; i < elements.length; i++) {
         element = elements.item(i);
         metadata = document.createElement("small");
+        element.parentElement.insertBefore(document.createTextNode(' '), element.nextSibling);
+        element.parentElement.insertBefore(metadata, element.nextSibling);
         if (element.hasAttribute("data-news-metadata-processed")) continue;
         metadata.appendChild(document.createTextNode('['));
         if (element.hasAttribute("data-news-metadata-url")) metadata.insertAdjacentHTML('afterend', '<a href="' + element.getAttribute("data-news-metadata-url") + '" title="website" target="_blank">🔗</a>');
@@ -69,8 +71,6 @@ News.initMetadata = function() {
         }
         if (element.hasAttribute("data-news-metadata-facebook")) metadata.insertAdjacentHTML('afterend', '<a href="https://www.facebook.com/' + element.getAttribute("data-news-metadata-facebook") + '" title="facebook" target="_blank">' + News.metadata_logos.facebook + '</a>');
         metadata.appendChild(document.createTextNode(']'));
-        element.parentElement.insertBefore(metadata, element.nextSibling);
-        element.parentElement.insertBefore(document.createTextNode(' '), metadata);
         element.setAttribute("data-news-metadata-processed", "");
     }
 }
