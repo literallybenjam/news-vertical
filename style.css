@@ -220,7 +220,7 @@ html[data-news-features~="footnotes"] > body > footer#news-footnotes:not(:empty)
     margin: auto;
     border: thin #828282 solid;
     border-radius: .4rem;
-    padding: 0;
+    padding: 0 .2rem;
     width: 5rem;
     width: -webkit-max-content;
     width: -moz-max-content;
