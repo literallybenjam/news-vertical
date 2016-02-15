@@ -161,7 +161,7 @@ html[data-news-features~="footnotes"] > body > footer#news-footnotes {
     margin: 0;
     border-top: thin #828282 solid;
     padding: 1rem;
-    height: 5rem;
+    height: 3rem;
     font-weight: 200;
     font-size: calc(1rem / 1.4);
     line-height: 1rem;
@@ -200,7 +200,7 @@ html[data-news-features~="footnotes"] > body > footer#news-footnotes ~ div#news-
 }
 html[data-news-features~="footnotes"] > body > footer#news-footnotes:not(:empty) ~ div#news-footnotes-padding {
     padding: 1rem;
-    height: 5rem;
+    height: 3rem;
 }
 
 /*  Page Layout  */
