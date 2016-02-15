@@ -68,7 +68,6 @@ News.initMetadata = function() {
         metadata = document.createElement("small");
         metadata.className = "news-metadata";
         element.appendChild(metadata);
-        metadata.appendChild(document.createTextNode('['));
         if (element.hasAttribute("data-news-metadata-url")) metadata.insertAdjacentHTML('beforeend', '<a href="' + element.getAttribute("data-news-metadata-url") + '" title="Website" target="_blank">🔗</a>');
         if (element.hasAttribute("data-news-metadata-twitter")) {
             if (element.getAttribute("data-news-metadata-twitter")[0] === "@") element.setAttribute("data-news-metadata-twitter", element.getAttribute("data-news-metadata-twitter").substr(1));
@@ -79,7 +78,6 @@ News.initMetadata = function() {
         if (element.hasAttribute("data-news-metadata-tumblr")) metadata.insertAdjacentHTML('beforeend', '<a href="https://' + element.getAttribute("data-news-metadata-tumblr") + '.tumblr.com/" title="Tumblr" target="_blank">' + News.metadata_logos.tumblr + '</a>');
         if (element.hasAttribute("data-news-metadata-youtube")) metadata.insertAdjacentHTML('beforeend', '<a href="https://www.youtube.com/user/' + element.getAttribute("data-news-metadata-youtube") + '" title="YouTube" target="_blank">' + News.metadata_logos.youtube + '</a>');
         if (element.hasAttribute("data-news-metadata-patreon")) metadata.insertAdjacentHTML('beforeend', '<a href="https://www.patreon.com/' + element.getAttribute("data-news-metadata-patreon") + '" title="Patreon" target="_blank">' + News.metadata_logos.patreon + '</a>');
-        metadata.appendChild(document.createTextNode(']'));
     }
 }
 
