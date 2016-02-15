@@ -16,6 +16,7 @@ var News = {
         twitter: '<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="text" viewBox="0 0 182.66667 150.66667"><g transform="matrix(1.3333 0 0 -1.3333 0 150.67)"><g transform="scale(.1)"><g clip-path="url(#news-logo-twitter-clip)"><path d="m1366.9 989.39c-50.27-22.309-104.33-37.387-161.05-44.18 57.89 34.723 102.34 89.679 123.28 155.15-54.18-32.15-114.18-55.47-178.09-68.04-51.13 54.49-124.02 88.55-204.68 88.55-154.89 0-280.43-125.55-280.43-280.43 0-21.988 2.457-43.398 7.258-63.91-233.08 11.68-439.72 123.36-578.04 293.01-24.141-41.4-37.969-89.567-37.969-140.97 0-97.308 49.489-183.13 124.76-233.44-45.969 1.437-89.218 14.058-127.03 35.078-0.043-1.18-0.043-2.348-0.043-3.52 0-135.9 96.68-249.22 224.96-275-23.512-6.41-48.281-9.8-73.86-9.8-18.089 0-35.628 1.711-52.781 5 35.711-111.41 139.26-192.5 262-194.77-96.058-75.23-216.96-120.04-348.36-120.04-22.621 0-44.961 1.332-66.918 3.91 124.16-79.568 271.55-125.98 429.94-125.98 515.82 0 797.86 427.31 797.86 797.93 0 12.153-0.28 24.223-0.79 36.25 54.77 39.571 102.31 88.95 139.93 145.2"/></g></g></g></svg>',
         youtube: '<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="text" viewBox="0 0 68 48"><path mask="url(#news-metadata-youtube-mask)" d="m .66,37.62 c 0,0 .66,4.70 2.70,6.77 2.58,2.71 5.98,2.63 7.49,2.91 5.43,.52 23.10,.68 23.12,.68 .00,-1.3e-5 14.29,-0.02 23.81,-0.71 1.32,-0.15 4.22,-0.17 6.81,-2.89 2.03,-2.07 2.70,-6.77 2.70,-6.77 0,0 .67,-5.52 .67,-11.04 l 0,-5.17 c 0,-5.52 -0.67,-11.04 -0.67,-11.04 0,0 -0.66,-4.70 -2.70,-6.77 C 62.03,.86 59.13,.84 57.80,.69 48.28,0 34.00,0 34.00,0 33.97,0 19.69,0 10.18,.69 8.85,.84 5.95,.86 3.36,3.58 1.32,5.65 .66,10.35 .66,10.35 c 0,0 -0.55,4.50 -0.66,9.45 l 0,8.36 c .10,4.94 .66,9.45 .66,9.45 z"/></svg>'
     },
+    processTouch: undefined,
     processScroll: undefined
 }
 
@@ -65,6 +66,7 @@ News.initMetadata = function() {
         element = elements.item(i);
         if (element.classList.contains("news-metadata-processed")) continue;
         element.classList.add("news-metadata-processed");
+        element.addEventListener("touchstart", News.processTouch, false);
         metadata = document.createElement("small");
         metadata.className = "news-metadata";
         element.appendChild(metadata);
@@ -79,6 +81,7 @@ News.initMetadata = function() {
         if (element.hasAttribute("data-news-metadata-youtube")) metadata.insertAdjacentHTML('beforeend', '<a href="https://www.youtube.com/user/' + element.getAttribute("data-news-metadata-youtube") + '" title="YouTube" target="_blank">' + News.metadata_logos.youtube + '</a>');
         if (element.hasAttribute("data-news-metadata-patreon")) metadata.insertAdjacentHTML('beforeend', '<a href="https://www.patreon.com/' + element.getAttribute("data-news-metadata-patreon") + '" title="Patreon" target="_blank">' + News.metadata_logos.patreon + '</a>');
     }
+    News.is_initialized.metadata = true;
 }
 
 News.processScroll = function(e) {
@@ -100,5 +103,12 @@ News.processScroll = function(e) {
                 else if (!note) document.getElementById("news-footnotes").appendChild(footnote.getElementsByClassName("note").item(0).cloneNode(true));
             }
         }
+    }
+}
+
+News.processTouch = function(e) {
+    if (News.features.metadata && News.is_initialized.metadata) {
+        if (e.target.hasAttribute("data-news-metadata-activated")) e.target.removeAttribute("data-news-metadata-activated");
+        else if (e.target.classList.contains("news-metadata-processed")) e.target.setAttribute("data-news-metadata-activated", "");
     }
 }

@@ -259,7 +259,7 @@ html[data-news-features~="footnotes"] > body > footer#news-footnotes:not(:empty)
     overflow: auto;
     transition: opacity .5s, visibility .5s;
 }
-*.news-metadata-processed:hover *.news-metadata {
+*.news-metadata-processed:hover *.news-metadata, *.news-metadata-processed[data-news-metadata-activated] *.news-metadata {
     opacity: 1;
     visibility: visible;
     cursor: auto;
