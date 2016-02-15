@@ -116,6 +116,7 @@ The features currently supported by `script.js` are:
     - `data-news-metadata-twitter` : Twitter username
     - `data-news-metadata-facebook` : Facebook username
     - `data-news-metadata-tumblr` : Tumblr username
+    - `data-news-metadata-youtube` : YouTube username
     - `data-news-metadata-patreon` : Patreon username
 
 ##  Considerations:  ##
