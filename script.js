@@ -60,8 +60,8 @@ News.initMetadata = function() {
     for (i = 0; i < elements.length; i++) {
         element = elements.item(i);
         metadata = document.createElement("small");
-        element.parentElement.insertBefore(document.createTextNode(' '), element.nextSibling);
         element.parentElement.insertBefore(metadata, element.nextSibling);
+        element.parentElement.insertBefore(document.createTextNode(' '), metadata);
         if (element.hasAttribute("data-news-metadata-processed")) continue;
         metadata.appendChild(document.createTextNode('['));
         if (element.hasAttribute("data-news-metadata-url")) metadata.insertAdjacentHTML('beforeend', '<a href="' + element.getAttribute("data-news-metadata-url") + '" title="website" target="_blank">🔗</a>');
