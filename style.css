@@ -882,13 +882,13 @@ p + p {
 }
 blockquote > p:not(:empty)::before {
     display: inline-block;
-    -webkit-margin-start: -1rem;
+    -webkit-margin-start: -1em;
     -webkit-margin-end: 0;
-    margin-inline-start: -1rem;
+    margin-inline-start: -1em;
     margin-inline-end: 0;
     padding: 0;
-    -webkit-logical-width: 1rem;
-    inline-size: 1rem;
+    -webkit-logical-width: 1em;
+    inline-size: 1em;
     text-align: end;
     text-indent: 0;
     content: open-quote;
