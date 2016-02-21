@@ -83,13 +83,15 @@
     max-width: 18rem;
     overflow-x: hidden;
 }
-*.text, *.vertical.text, *.horizontal.text, *.vertical.horizontal.text, *.text.inline {
+*.text, *.text.inline {
     display: inline-block;
     vertical-align: top;
     line-height: 1;
+    text-align: center;
+}
+*.vertical.text, *.horizontal.text, *.vertical.horizontal.text {
     -webkit-min-logical-width: 1em;
     min-inline-size: 1em;
-    text-align: center;
 }
 *.inline {
     display: inline;
@@ -571,10 +573,10 @@ div.fb-post iframe {
     margin: 0;
 }
 img.text, svg.text {
-    display: inline-block;
     margin: 0;
     padding: calc(.2em / 1.4);
     max-height: calc(1em / 1.4);
+    max-width: calc(1em / 1.4);
     line-height: 1em;
     vertical-align: middle;
 }
