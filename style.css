@@ -575,7 +575,6 @@ img.text, svg.text {
     margin: 0;
     padding: calc(.2em / 1.4);
     max-height: calc(1em / 1.4);
-    max-width: calc(1em / 1.4);
     line-height: 1em;
     vertical-align: middle;
 }
