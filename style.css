@@ -295,6 +295,7 @@ body {
     padding: 1.4rem 2rem;
     -webkit-max-logical-width: 35rem;
     max-inline-size: 35rem;
+    line-height: 1.4rem; /*  Chrome doesn't handle rem properly for line-height on the root element, so it needs to be reset here.  */
 }
 html.horizontal:not(.vertical) body:not(.vertical), body.horizontal:not(.vertical) {
     -webkit-max-logical-width: 28rem;
