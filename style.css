@@ -416,7 +416,16 @@ header {
     margin-block-end: 1.4rem;
     margin-inline-start: 0;
     margin-inline-end: 0;
-    border-bottom: thin currentColor solid;
+    -webkit-border-after: medium currentColor double;
+    border-block-end: medium currentColor double;
+    -webkit-padding-before: 0;
+    -webkit-padding-after: .7rem;
+    -webkit-padding-start: 0;
+    -webkit-padding-end: 0;
+    padding-block-start: 0;
+    padding-block-end: .7rem;
+    padding-inline-start: 0;
+    padding-inline-end: 0;
 }
 header:first-child {
     -webkit-margin-before: 0;
