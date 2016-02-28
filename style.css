@@ -402,18 +402,23 @@ body > header ~ main {
 /*  Sectioning Elements  */
 
 main {
+    display: block;
     position: relative;
 }
 header {
-    -webkit-margin-before: 1.4rem;
+    display: block;
+    -webkit-margin-before: 2.8rem;
     -webkit-margin-after: 1.4rem;
-    -webkit-margin-start: 1rem;
-    -webkit-margin-end: 1rem;
-    margin-block-start: 1.4rem;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    margin-block-start: 2.8rem;
     margin-block-end: 1.4rem;
-    margin-inline-start: 1rem;
-    margin-inline-end: 1rem;
-    text-align: center;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
+header:first-child {
+    -webkit-margin-before: 0;
+    margin-block-start: 0;
 }
 section {
     display: block;
@@ -591,6 +596,9 @@ svg {
 
 /*  Headings  */
 
+header h1, header h2, header h3, header h4, header h5, header h6 {
+    margin: 0;
+}
 h1 {
     -webkit-margin-before: 0;
     -webkit-margin-after: 1.4rem;
