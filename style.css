@@ -308,9 +308,10 @@ body > header {
     -ms-writing-mode: horizontal-tb;
     writing-mode: horizontal-tb;
     position: absolute;
-    margin: 0;
     top: 1.4rem;
     right: 2rem;
+    margin: 0;
+    border: none;
     padding: 0;
     height: 3rem;
     width: 28rem;
@@ -415,6 +416,7 @@ header {
     margin-block-end: 1.4rem;
     margin-inline-start: 0;
     margin-inline-end: 0;
+    border-bottom: thin currentColor solid;
 }
 header:first-child {
     -webkit-margin-before: 0;
