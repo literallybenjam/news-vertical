@@ -90,7 +90,10 @@ News.initMetadata = function() {
 News.processScroll = function(e) {
     if (News.features.footnotes && News.is_initialized.footnotes) {
         for (var i = 0; i < News.footnotes.length; i++) {
-            if (News.footnotes.item(i).getBoundingClientRect().bottom >= 0 && News.footnotes.item(i).getBoundingClientRect().top < window.innerHeight) document.getElementById("news-footnotes").querySelector('*[data-news-counter-footnote="' + News.footnotes.item(i).getAttribute("data-news-counter-footnote") +'"]').scrollIntoView({behavior: "smooth"});
+            if (News.footnotes.item(i).getBoundingClientRect().bottom >= document.getElementById("news-footnotes").getBoundingClientRect().top && News.footnotes.item(i).getBoundingClientRect().top < window.innerHeight) {
+                document.getElementById("news-footnotes").querySelector('*[data-news-counter-footnote="' + News.footnotes.item(i).getAttribute("data-news-counter-footnote") +'"]').scrollIntoView({behavior: "smooth"});
+                break;
+            }
         }
     }
 }
