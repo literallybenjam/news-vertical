@@ -55,6 +55,7 @@ News.initFootnotes = function() {
         }
         document.getElementById("news-footnotes").appendChild(News.footnotes.item(i).getElementsByClassName("note").item(0));
     }
+    document.getElementById("news-footnotes-padding").style.height = document.getElementById("news-footnotes").clientHeight + "px";
     News.is_initialized.footnotes = true;
 }
 
