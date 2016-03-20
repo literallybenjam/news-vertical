@@ -89,6 +89,7 @@ News.initMetadata = function() {
 
 News.processScroll = function(e) {
     if (News.features.footnotes && News.is_initialized.footnotes) {
+        if (/^((?!chrome|android).)*safari/i.test(navigator.userAgent)) return;
         for (var i = 0; i < News.footnotes.length; i++) {
             if (News.footnotes.item(i).getBoundingClientRect().top > 0 && News.footnotes.item(i).getBoundingClientRect().bottom <= document.getElementById("news-footnotes").getBoundingClientRect().top) {
                 document.getElementById("news-footnotes").querySelector('*[data-news-counter-footnote="' + News.footnotes.item(i).getAttribute("data-news-counter-footnote") +'"]').scrollIntoView({behavior: "smooth"});
