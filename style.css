@@ -173,9 +173,9 @@ html[data-news-features~="footnotes"] > body > footer#news-footnotes {
     right: 0;
     margin: 0;
     border-top: medium #828282 double;
-    padding: 0;
+    padding: 1rem 0 0;
     min-height: 3rem;
-    max-height: 25%;
+    max-height: calc(25% - 1rem);
     font-weight: 200;
     font-size: calc(1rem / 1.4);
     line-height: 1rem;
@@ -195,11 +195,24 @@ html[data-news-features~="footnotes"] > body > footer#news-footnotes:empty {
     opacity: 0;
     visibility: hidden;
 }
-html[data-news-features~="footnotes"] > body > footer#news-footnotes > *, html[data-news-features~="footnotes"] > body > footer#news-footnotes::after {
+html[data-news-features~="footnotes"] > body > footer#news-footnotes > * {
+    display: block;
+    margin: 1rem auto;
+    max-width: 28rem;
+}
+html[data-news-features~="footnotes"] > body > footer#news-footnotes::before {
     display: block;
     margin: 0 auto;
-    padding: 1rem 0 0;
-    max-width: 28rem;
+    padding: 0;
+    font-size: 2rem;
+    line-height: 2rem;
+    font-weight: 400;
+    content: "Footnotes:"
+}
+html[data-news-features~="footnotes"] > body > footer#news-footnotes::after {
+    display: block;
+    margin: 0 auto;
+    padding: 0;
     content: "";
 }
 html[data-news-features~="footnotes"] > body > footer#news-footnotes > *::before {
