@@ -204,8 +204,8 @@ html[data-news-features~="footnotes"] > body > footer#news-footnotes::before {
     display: block;
     margin: 0 auto;
     padding: 0;
-    font-size: 2rem;
-    line-height: 2rem;
+    font-size: 1rem;
+    line-height: 1rem;
     font-weight: 400;
     max-width: 28rem;
     content: "Footnotes:"
