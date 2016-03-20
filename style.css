@@ -197,7 +197,8 @@ html[data-news-features~="footnotes"] > body > footer#news-footnotes:empty {
 }
 html[data-news-features~="footnotes"] > body > footer#news-footnotes > * {
     display: block;
-    margin: 1rem auto;
+    margin: 0 auto;
+    padding: 1rem 0 0;
     max-width: 28rem;
 }
 html[data-news-features~="footnotes"] > body > footer#news-footnotes::before {
