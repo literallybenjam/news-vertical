@@ -196,7 +196,13 @@ html[data-news-features~="footnotes"] > body > footer#news-footnotes:empty {
 }
 html[data-news-features~="footnotes"] > body > footer#news-footnotes > * {
     display: block;
-    margin: 0 auto 1rem;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 28rem;
+}
+html[data-news-features~="footnotes"] > body > footer#news-footnotes > * + * {
+    display: block;
+    margin: 1rem auto 0;
     padding: 0;
     max-width: 28rem;
 }
@@ -290,7 +296,6 @@ html {
     -ms-hyphens: auto;
     -moz-hyphens: auto;
     hyphens: auto;
-    counter-reset: footnote;
 }
 body {
     position: relative;
@@ -639,7 +644,6 @@ h2 {
     line-height: 1.4rem;
     font-weight: 400;
     text-align: start;
-    counter-reset: footnote;
 }
 h2:first-child {
     -webkit-margin-before: 0;
