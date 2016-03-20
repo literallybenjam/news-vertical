@@ -175,7 +175,7 @@ html[data-news-features~="footnotes"] > body > footer#news-footnotes {
     border-top: thin #828282 solid;
     padding: 1rem;
     min-height: 3rem;
-    max-height: calc(50% - 2rem);
+    max-height: calc(25% - 2rem);
     font-weight: 200;
     font-size: calc(1rem / 1.4);
     line-height: 1rem;
@@ -186,10 +186,11 @@ html[data-news-features~="footnotes"] > body > footer#news-footnotes {
     opacity: 1;
     visibility: visible;
     overflow: auto;
-    transition: opacity .5s, visibility .5s, padding .5s, height .5s;
+    transition: opacity .5s, visibility .5s, padding .5s, height .5s, min-height .5s;
 }
 html[data-news-features~="footnotes"] > body > footer#news-footnotes:empty {
     padding: 0 1rem;
+    min-height: 0;
     height: 0;
     opacity: 0;
     visibility: hidden;
