@@ -33,7 +33,7 @@ News.init = function(features) {
         if (features.indexOf(feature) !== -1) News.features[feature] = true;
     }
     if (News.features.footnotes) window.addEventListener("load", News.initFootnotes, false);
-    if (News.features.footnotes) document.body.addEventListener("scroll", News.processScroll, false);
+    if (News.features.footnotes) window.addEventListener("scroll", News.processScroll, false);
     if (News.features.metadata) window.addEventListener("load", News.initMetadata, false);
     if (News.features.metadata) window.addEventListener("touchstart", News.processTouch, false);
     document.documentElement.setAttribute("data-news-features", features.join(" "));
