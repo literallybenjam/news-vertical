@@ -195,11 +195,12 @@ html[data-news-features~="footnotes"] > body > footer#news-footnotes:empty {
     opacity: 0;
     visibility: hidden;
 }
-html[data-news-features~="footnotes"] > body > footer#news-footnotes > * {
+html[data-news-features~="footnotes"] > body > footer#news-footnotes > *, html[data-news-features~="footnotes"] > body > footer#news-footnotes::after {
     display: block;
     margin: 0 auto;
     padding: 1rem 0 0;
     max-width: 28rem;
+    content: "";
 }
 html[data-news-features~="footnotes"] > body > footer#news-footnotes::before {
     display: block;
@@ -210,12 +211,6 @@ html[data-news-features~="footnotes"] > body > footer#news-footnotes::before {
     font-weight: 400;
     max-width: 28rem;
     content: "Footnotes:"
-}
-html[data-news-features~="footnotes"] > body > footer#news-footnotes::after {
-    display: block;
-    margin: 0 auto;
-    padding: 0;
-    content: "";
 }
 html[data-news-features~="footnotes"] > body > footer#news-footnotes > *::before {
     content: attr(data-news-counter-footnote) ". ";
