@@ -116,6 +116,7 @@ html:not([data-news-features~="footnotes"]) *.footnote *.note {
     position: absolute;
     offset-inline-start: 0;
     offset-inline-end: 0;
+    margin: 0;
     -webkit-padding-before: .7rem;
     -webkit-padding-after: .7rem;
     -webkit-padding-start: 0;
@@ -125,7 +126,6 @@ html:not([data-news-features~="footnotes"]) *.footnote *.note {
     padding-inline-start: 0;
     padding-inline-end: 0;
     border: none;
-    margin: 0;
     font-family: inherit;
     font-size: calc(1rem / 1.4);
     font-weight: 200;
@@ -173,7 +173,7 @@ html[data-news-features~="footnotes"] > body > footer#news-footnotes {
     right: 0;
     margin: 0;
     border-top: medium #828282 double;
-    padding: 1rem 0 0;
+    padding: 1rem 2rem 0;
     min-height: 3rem;
     max-height: calc(25% - 1rem);
     font-weight: 200;
