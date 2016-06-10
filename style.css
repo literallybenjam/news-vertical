@@ -521,11 +521,14 @@ table {
     margin-block-end: .7em;
     margin-inline-start: auto;
     margin-inline-end: auto;
+    border-collapse: collapse;
     padding: 0;
+    color: #1c1c1c;
+    background: #cccccc;
     font-size: calc(1rem / 1.4);
+    line-height: 1rem;
     -webkit-logical-width: 100%;
     inline-size: 100%;
-    border-collapse: collapse;
     overflow: auto;
     text-align: start;
 }
@@ -763,6 +766,7 @@ dd {
     position: relative;
     margin: 0;
     padding: 0;
+    z-index: -1;
 }
 dd::before {
     white-space: pre-wrap;
